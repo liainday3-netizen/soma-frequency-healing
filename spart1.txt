@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="SOMA ∞ Ultimate — Sacred Frequency Healing System · Oracle Edition">
+<meta name="theme-color" content="#010306">
+<title>SOMA ∞ Ultimate — Sacred Frequency System · Oracle Edition</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&family=DM+Mono:wght@300;400&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap');
+:root{
+  --void:#010306;--deep:#040b12;--surface:#08141f;--panel:#0c1a28;--panel-hi:#111f2e;
+  --rim:#152438;--rim-hi:#1c3250;--muted:#223650;
+  --gold:#c9a84c;--gold-dim:#7a6030;--gold-pale:#ead898;--gold-glow:rgba(201,168,76,0.14);
+  --aqua:#48c8de;--aqua-dim:#1b5868;--violet:#9458b4;--violet-dim:#472258;
+  --rose:#de5878;--rose-dim:#5a2030;--green:#48c882;--amber:#de9e2a;
+  --claude:#d87250;--claude-dim:#743820;--claude-lo:rgba(216,114,80,0.08);--claude-pale:#f0a880;
+  --lso:#58ce98;--lso-dim:#1e4e38;
+  --oracle:#7c4dff;--oracle-dim:#3a1a88;--oracle-lo:rgba(124,77,255,0.09);--oracle-pale:#c4a8ff;
+  --tone:#2ad4b4;--tone-dim:#0e5848;--tone-lo:rgba(42,212,180,0.08);--tone-pale:#a0f0e0;
+  --text:#bcd4e6;--text-dim:#4e6e82;--text-hi:#e6f2fc;--text-lo:#2a3e50;
+  --gap:18px;--r:3px;--rl:6px;
+  --fast:0.18s ease;--mid:0.28s ease;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{font-size:16px;scroll-behavior:smooth;}
+body{background:var(--void);color:var(--text);font-family:'Cormorant Garamond',Georgia,serif;min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;height:4px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--rim-hi);border-radius:2px;}
+
+/* COSMOS */
+#cosmos{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+#starfield{position:absolute;inset:0;width:100%;height:100%;}
+.nebula{position:absolute;border-radius:50%;filter:blur(100px);mix-blend-mode:screen;animation:ndrift linear infinite alternate;will-change:transform;}
+.n1{width:800px;height:550px;top:-15%;left:-12%;background:radial-gradient(ellipse,rgba(0,90,150,0.13),transparent 70%);animation-duration:38s;}
+.n2{width:650px;height:650px;bottom:-15%;right:-10%;background:radial-gradient(ellipse,rgba(85,0,140,0.1),transparent 70%);animation-duration:30s;animation-direction:alternate-reverse;}
+.n3{width:500px;height:380px;top:30%;left:30%;background:radial-gradient(ellipse,rgba(201,168,76,0.05),transparent 70%);animation-duration:44s;}
+.n4{width:400px;height:400px;top:50%;left:10%;background:radial-gradient(ellipse,rgba(124,77,255,0.06),transparent 70%);animation-duration:50s;}
+@keyframes ndrift{from{transform:translate(0,0) scale(1);}to{transform:translate(28px,18px) scale(1.07);}}
+
+/* APP */
+#app{position:relative;z-index:1;max-width:1540px;margin:0 auto;padding:0 22px;display:flex;flex-direction:column;min-height:100vh;}
+
+/* HEADER */
+header{flex-shrink:0;padding:22px 0 16px;display:flex;align-items:center;justify-content:space-between;position:relative;}
+header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),rgba(42,212,180,0.3),rgba(124,77,255,0.2),transparent);}
+.logo{display:flex;flex-direction:column;gap:5px;user-select:none;}
+.logo-wm{font-family:'Cinzel',serif;font-size:2rem;font-weight:900;letter-spacing:0.28em;line-height:1;background:linear-gradient(135deg,var(--gold-dim),var(--gold),var(--gold-pale),var(--tone-pale));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 24px rgba(201,168,76,0.28));}
+.logo-sub{display:flex;align-items:center;gap:7px;font-family:'DM Mono',monospace;font-size:0.55rem;font-weight:300;letter-spacing:0.3em;color:var(--text-dim);text-transform:uppercase;}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border:1px solid var(--claude-dim);border-radius:20px;background:var(--claude-lo);color:var(--claude);font-size:0.5rem;letter-spacing:0.12em;}
+.badge.b-oracle{border-color:var(--oracle-dim);background:var(--oracle-lo);color:var(--oracle-pale);}
+.badge.b-tone{border-color:var(--tone-dim);background:var(--tone-lo);color:var(--tone-pale);}
+.bdot{width:5px;height:5px;border-radius:50%;background:currentColor;animation:bp 2.5s infinite;}
+@keyframes bp{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.hr{display:flex;align-items:center;gap:13px;}
+.hclock{display:flex;flex-direction:column;align-items:flex-end;gap:1px;font-family:'DM Mono',monospace;}
+.hclock-l{font-size:0.48rem;letter-spacing:0.18em;color:var(--text-lo);text-transform:uppercase;}
+.hclock-v{font-size:1rem;letter-spacing:0.06em;color:var(--aqua);font-variant-numeric:tabular-nums;}
+.spill{display:flex;align-items:center;gap:6px;padding:6px 13px;border:1px solid var(--rim-hi);border-radius:var(--r);font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;color:var(--text-dim);background:rgba(8,20,31,0.7);transition:border-color var(--mid);}
+.spill.active{border-color:var(--gold-dim);}
+.sdot{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;transition:background var(--mid);animation:sdotp 2.4s infinite;}
+@keyframes sdotp{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(72,200,130,0.45);}50%{opacity:0.55;box-shadow:0 0 0 7px rgba(72,200,130,0);}}
+
+/* TABS */
+.tab-nav{flex-shrink:0;display:flex;align-items:flex-end;border-bottom:1px solid var(--rim);padding-top:4px;overflow-x:auto;}
+.tab-nav::-webkit-scrollbar{height:0;}
+.tab-btn{padding:11px 16px 10px;border:none;border-bottom:2px solid transparent;background:transparent;font-family:'Cinzel',serif;font-size:0.57rem;font-weight:400;letter-spacing:0.26em;text-transform:uppercase;color:var(--text-dim);cursor:pointer;white-space:nowrap;transition:color var(--fast),border-color var(--fast);margin-bottom:-1px;user-select:none;}
+.tab-btn:hover{color:var(--text);}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
+.tab-btn.t-claude.active{color:var(--claude);border-bottom-color:var(--claude);}
+.tab-btn.t-lso.active{color:var(--lso);border-bottom-color:var(--lso);}
+.tab-btn.t-oracle.active{color:var(--oracle-pale);border-bottom-color:var(--oracle);}
+.tab-btn.t-tone.active{color:var(--tone-pale);border-bottom-color:var(--tone);}
+.tsc{font-family:'DM Mono',monospace;font-size:0.42rem;color:var(--text-lo);margin-left:3px;letter-spacing:0;}
+.tab-page{display:none;flex:1;}
+.tab-page.active{display:flex;flex-direction:column;}
+
+/* PANEL */
+.panel{background:linear-gradient(148deg,rgba(12,26,40,0.94),rgba(8,20,31,0.97));border:1px solid var(--rim);border-radius:var(--rl);position:relative;overflow:hidden;backdrop-filter:blur(4px);}
+.panel::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim),transparent);opacity:0.5;}
+.panel.tp::before{background:linear-gradient(90deg,transparent,var(--tone-dim),var(--tone),var(--tone-dim),transparent);opacity:0.6;}
+.panel.cp::before{background:linear-gradient(90deg,transparent,var(--claude-dim),transparent);}
+.panel.lp::before{background:linear-gradient(90deg,transparent,var(--lso-dim),transparent);}
+.panel.op::before{background:linear-gradient(90deg,transparent,var(--oracle-dim),var(--oracle),var(--oracle-dim),transparent);}
+.ptitle{font-family:'Cinzel',serif;font-size:0.58rem;font-weight:400;letter-spacing:0.4em;color:var(--gold-dim);text-transform:uppercase;padding:12px 17px 9px;border-bottom:1px solid var(--rim);display:flex;align-items:center;justify-content:space-between;user-select:none;}
+.ptitle.tt{color:var(--tone-pale);letter-spacing:0.35em;}
+.ptitle.ct{color:var(--claude-dim);}
+.ptitle.lt{color:var(--lso-dim);}
+.ptitle.ot{color:var(--oracle-pale);}
+.ptag{font-family:'DM Mono',monospace;font-size:0.49rem;color:var(--text-lo);letter-spacing:0.16em;}
+
+/* CONTROLS */
+input[type=range]{width:100%;height:3px;-webkit-appearance:none;appearance:none;background:var(--muted);border-radius:2px;outline:none;cursor:pointer;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px rgba(201,168,76,0.45);transition:transform var(--fast);}
+input[type=range]:hover::-webkit-slider-thumb{transform:scale(1.35);}
+.sg{display:flex;flex-direction:column;gap:5px;}
+.sr{display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:0.55rem;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;}
+.sv{color:var(--aqua);}
+
+.btn-p{width:100%;height:54px;background:linear-gradient(135deg,var(--gold-dim),var(--gold));border:none;border-radius:var(--r);font-family:'Cinzel',serif;font-size:0.74rem;font-weight:600;letter-spacing:0.34em;color:var(--void);cursor:pointer;position:relative;overflow:hidden;transition:box-shadow var(--mid),transform var(--fast);}
+.btn-p:hover{box-shadow:0 0 34px rgba(201,168,76,0.45);transform:translateY(-1px);}
+.btn-p.playing{background:linear-gradient(135deg,var(--aqua-dim),var(--aqua));}
+.btn-sm{padding:6px 13px;border:1px solid var(--rim-hi);border-radius:var(--r);background:transparent;font-family:'DM Mono',monospace;font-size:0.55rem;letter-spacing:0.09em;color:var(--text-dim);cursor:pointer;transition:all var(--fast);text-transform:uppercase;white-space:nowrap;}
+.btn-sm:hover{border-color:var(--gold-dim);color:var(--text);}
+.btn-sm.active{border-color:var(--gold);color:var(--gold);background:var(--gold-glow);}
+.btn-sm.danger:hover{border-color:var(--rose-dim);color:var(--rose);}
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+
+/* PAGE 1 — FREQUENCIES */
+#pg-freq{flex:1;display:grid;grid-template-columns:1fr 350px;grid-template-rows:auto 1fr;gap:var(--gap);padding:var(--gap) 0;align-items:start;}
+.viz-panel{grid-column:1;grid-row:1/3;}
+.viz-body{padding:17px;display:flex;flex-direction:column;align-items:center;gap:9px;}
+#mandala-cv{border-radius:50%;box-shadow:0 0 90px rgba(201,168,76,0.1),0 0 180px rgba(72,200,222,0.05);display:block;flex-shrink:0;}
+#wave-cv{width:100%;height:34px;display:block;}
+.fro{display:flex;gap:30px;justify-content:center;margin-top:3px;}
+.fs{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.fs-l{font-family:'DM Mono',monospace;font-size:0.49rem;letter-spacing:0.22em;color:var(--text-dim);text-transform:uppercase;}
+.fs-v{font-family:'Cinzel',serif;font-size:1.4rem;line-height:1.1;color:var(--gold);text-shadow:0 0 20px rgba(201,168,76,0.45);}
+.fs-u{font-family:'DM Mono',monospace;font-size:0.52rem;color:var(--text-dim);}
+.sidebar{grid-column:2;display:flex;flex-direction:column;gap:var(--gap);}
+.cb{padding:15px 17px;display:flex;flex-direction:column;gap:13px;}
+.bwl{padding:12px 17px 15px;display:flex;flex-direction:column;gap:8px;}
+.bwr{display:flex;align-items:center;gap:9px;}
+.bwn{font-family:'Cinzel',serif;font-size:0.58rem;font-weight:600;letter-spacing:0.07em;width:48px;flex-shrink:0;}
+.bwb{flex:1;height:5px;background:var(--muted);border-radius:3px;overflow:hidden;}
+.bwf{height:100%;border-radius:3px;transition:width 0.65s ease;}
+.bwrng{font-family:'DM Mono',monospace;font-size:0.52rem;color:var(--text-dim);width:52px;text-align:right;flex-shrink:0;}
+.chl{padding:9px 15px 13px;display:flex;flex-direction:column;gap:5px;}
+.chr{display:flex;align-items:center;gap:8px;padding:6px 8px;border:1px solid transparent;border-radius:var(--r);cursor:pointer;transition:all var(--fast);}
+.chr:hover{border-color:var(--rim-hi);background:rgba(255,255,255,0.015);}
+.chr.active{border-color:rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);}
+.chg{font-size:0.86rem;width:17px;text-align:center;flex-shrink:0;}
+.cho{width:14px;height:14px;border-radius:50%;flex-shrink:0;animation:ob 4s ease-in-out infinite;}
+@keyframes ob{0%,100%{transform:scale(1);}50%{transform:scale(1.22);}}
+.chn{font-family:'Cinzel',serif;font-size:0.58rem;font-weight:600;letter-spacing:0.07em;flex:1;color:var(--text);}
+.chz{font-family:'DM Mono',monospace;font-size:0.54rem;color:var(--text-dim);}
+.flp{grid-column:1/-1;}
+.flg{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:12px 17px 15px;}
+.fcard{padding:10px 9px;border:1px solid var(--rim);border-radius:var(--r);cursor:pointer;transition:all var(--mid);position:relative;overflow:hidden;background:rgba(4,11,18,0.6);}
+.fcard::after{content:'';position:absolute;inset:0;opacity:0;transition:opacity var(--mid);}
+.fcard:hover{border-color:var(--gold-dim);transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,0,0,0.4);}
+.fcard.active{border-color:var(--gold);}
+.fcard.active::after{opacity:1;background:radial-gradient(ellipse at 50% 0%,rgba(201,168,76,0.1),transparent 65%);}
+.fcn{font-family:'Cinzel',serif;font-size:0.64rem;font-weight:600;letter-spacing:0.09em;color:var(--text-hi);margin-bottom:3px;}
+.fch{font-family:'DM Mono',monospace;font-size:0.9rem;line-height:1.1;margin-bottom:3px;}
+.fcd{font-size:0.6rem;color:var(--text-dim);line-height:1.4;font-style:italic;}
+.fcb{position:absolute;bottom:0;left:0;height:2px;width:0;transition:width var(--mid);}
+.fcard.active .fcb{width:100%;}
+
+/* PAGE 2 — HEALING TONES */
+#pg-tones{flex:1;display:flex;flex-direction:column;gap:var(--gap);padding:var(--gap) 0;}
+
+/* Master tone controls bar */
+.tone-mastbar{display:flex;align-items:center;gap:14px;padding:12px 18px;border:1px solid var(--tone-dim);border-radius:var(--rl);background:rgba(42,212,180,0.04);}
+.tmb-title{font-family:'Cinzel',serif;font-size:0.72rem;font-weight:600;letter-spacing:0.2em;color:var(--tone-pale);flex:1;}
+.tmb-sl-grp{display:flex;align-items:center;gap:8px;min-width:140px;}
+.tmb-sl-lbl{font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;white-space:nowrap;}
+.tmb-sl-v{font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--tone);min-width:32px;text-align:right;}
+.tmb-sl{flex:1;min-width:80px;height:3px;-webkit-appearance:none;appearance:none;background:var(--muted);border-radius:2px;outline:none;cursor:pointer;}
+.tmb-sl::-webkit-slider-thumb{-webkit-appearance:none;width:12px;height:12px;border-radius:50%;background:var(--tone);box-shadow:0 0 8px rgba(42,212,180,0.5);cursor:grab;}
+.stop-all-btn{padding:7px 16px;border:1px solid var(--tone-dim);border-radius:var(--r);background:rgba(42,212,180,0.06);font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.1em;color:var(--tone);cursor:pointer;transition:all var(--fast);white-space:nowrap;text-transform:uppercase;}
+.stop-all-btn:hover{background:rgba(42,212,180,0.15);border-color:var(--tone);}
+
+/* Tone cards grid */
+.tones-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+
+.tone-card{border:1px solid var(--rim);border-radius:var(--rl);background:linear-gradient(148deg,rgba(12,26,40,0.96),rgba(8,20,31,0.98));position:relative;overflow:hidden;transition:border-color var(--mid),box-shadow var(--mid);}
+.tone-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;opacity:0;transition:opacity var(--mid);}
+.tone-card.playing{box-shadow:0 0 30px rgba(42,212,180,0.12);}
+.tone-card.playing::before{opacity:1;}
+
+/* Tone card header */
+.tc-head{padding:14px 16px 10px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+.tc-left{display:flex;flex-direction:column;gap:4px;flex:1;}
+.tc-name-row{display:flex;align-items:center;gap:8px;}
+.tc-glyph{font-size:1.3rem;flex-shrink:0;}
+.tc-name{font-family:'Cinzel',serif;font-size:0.88rem;font-weight:600;letter-spacing:0.12em;}
+.tc-hz-badge{font-family:'DM Mono',monospace;font-size:1.35rem;font-weight:400;line-height:1;font-variant-numeric:tabular-nums;}
+.tc-hz-unit{font-size:0.6rem;color:var(--text-dim);font-family:'DM Mono',monospace;}
+.tc-tagline{font-size:0.78rem;color:var(--text-dim);font-style:italic;line-height:1.4;margin-top:2px;}
+
+/* Play button */
+.tc-play{width:46px;height:46px;border-radius:50%;border:1.5px solid;flex-shrink:0;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all var(--mid);background:transparent;font-size:1rem;position:relative;}
+.tc-play::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid currentColor;opacity:0;transition:all var(--mid);}
+.tc-play:hover{transform:scale(1.08);}
+.tc-play:hover::after{opacity:0.3;transform:scale(1.08);}
+.tc-play.playing{animation:play-pulse 2s infinite;}
+@keyframes play-pulse{0%,100%{box-shadow:0 0 0 0 currentColor;}50%{box-shadow:0 0 0 6px transparent;}}
+
+/* Oscilloscope */
+.tc-scope{padding:0 14px 8px;}
+.tc-scope canvas{width:100%;height:40px;display:block;border-radius:2px;background:rgba(4,11,18,0.5);}
+
+/* Info accordion */
+.tc-info{padding:0 15px 14px;display:flex;flex-direction:column;gap:0;}
+
+.tc-tabs{display:flex;gap:0;border-bottom:1px solid var(--rim);margin-bottom:10px;}
+.tc-tab{padding:6px 12px;background:transparent;border:none;font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.1em;color:var(--text-dim);cursor:pointer;transition:color var(--fast),border-bottom var(--fast);border-bottom:1.5px solid transparent;text-transform:uppercase;}
+.tc-tab:hover{color:var(--text);}
+.tc-tab.active{color:var(--tone-pale);border-bottom-color:var(--tone);}
+
+.tc-panel{display:none;}
+.tc-panel.active{display:flex;flex-direction:column;gap:8px;}
+
+/* Overview panel */
+.tc-desc{font-family:'Spectral',serif;font-size:0.8rem;line-height:1.72;color:var(--text);font-style:italic;}
+
+.tc-meta-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+.tc-meta-item{padding:6px 9px;border:1px solid var(--rim);border-radius:var(--r);background:rgba(4,11,18,0.4);}
+.tc-meta-key{font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.14em;color:var(--text-dim);text-transform:uppercase;margin-bottom:2px;}
+.tc-meta-val{font-family:'Spectral',serif;font-size:0.76rem;color:var(--text-hi);line-height:1.3;}
+
+/* Benefits panel */
+.tc-benefit-list{display:flex;flex-direction:column;gap:5px;}
+.tc-benefit{display:flex;gap:7px;align-items:flex-start;}
+.tc-bdot{width:4px;height:4px;border-radius:50%;flex-shrink:0;margin-top:6px;}
+.tc-btext{font-size:0.76rem;color:var(--text-dim);line-height:1.5;}
+
+/* Usage panel */
+.tc-usage-list{display:flex;flex-direction:column;gap:6px;}
+.tc-usage-item{padding:6px 10px;border-left:2px solid;border-radius:0 var(--r) var(--r) 0;background:rgba(4,11,18,0.4);}
+.tc-usage-label{font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:2px;}
+.tc-usage-val{font-size:0.76rem;color:var(--text);line-height:1.4;}
+
+/* Timer */
+.tc-timer{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--rim);border-radius:var(--r);background:rgba(4,11,18,0.3);margin-top:6px;}
+.tc-timer-icon{font-size:0.8rem;flex-shrink:0;}
+.tc-timer-text{font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.08em;color:var(--text-dim);flex:1;}
+.tc-timer-val{font-family:'DM Mono',monospace;font-size:0.7rem;color:var(--tone);font-variant-numeric:tabular-nums;min-width:42px;text-align:right;}
+
+/* PAGE 3+ shared */
+#pg-breath,#pg-claude,#pg-lso,#pg-oracle,#pg-journal{flex:1;padding:var(--gap) 0;}
+#pg-breath,#pg-lso,#pg-oracle{display:grid;gap:var(--gap);align-items:start;}
+#pg-breath{grid-template-columns:1fr 1fr;}
+#pg-claude{display:grid;grid-template-columns:1fr 305px;gap:var(--gap);padding:var(--gap) 0;align-items:start;}
+#pg-lso{grid-template-columns:1fr 1fr;}
+#pg-oracle{grid-template-columns:1fr 355px;}
+#pg-journal{display:grid;grid-template-columns:1fr 295px;gap:var(--gap);align-items:start;}
+
+/* Breathwork */
+.bvb{padding:22px 17px;display:flex;flex-direction:column;align-items:center;gap:20px;}
+.borb{position:relative;width:186px;height:186px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.bring{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--aqua-dim);transition:transform 0.9s ease;}
+.bring.r2{inset:16px;border-color:var(--aqua);opacity:0.55;}
+.bring.r3{inset:34px;border-color:rgba(72,200,222,0.28);border-style:dashed;animation:spins 20s linear infinite;}
+@keyframes spins{to{transform:rotate(360deg);}}
+.bcore{width:82px;height:82px;border-radius:50%;background:radial-gradient(circle,rgba(72,200,222,0.22),rgba(72,200,222,0.04));border:1px solid rgba(72,200,222,0.28);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;transition:all 0.7s ease;font-family:'DM Mono',monospace;color:var(--aqua);text-align:center;}
+.bcp{font-size:0.57rem;letter-spacing:0.1em;}
+.bcc{font-size:1.3rem;line-height:1.1;font-variant-numeric:tabular-nums;}
+.bpg{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;width:100%;}
+.bpb{padding:9px 5px;border:1px solid var(--rim-hi);border-radius:var(--r);background:transparent;cursor:pointer;transition:all var(--fast);display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;}
+.bpbn{font-family:'Cinzel',serif;font-size:0.6rem;font-weight:600;letter-spacing:0.07em;color:var(--text);}
+.bpbs{font-family:'DM Mono',monospace;font-size:0.52rem;color:var(--text-dim);}
+.bpb:hover{border-color:var(--aqua-dim);}
+.bpb.active{border-color:var(--aqua);background:rgba(72,200,222,0.06);}
+.bpb.active .bpbn{color:var(--aqua);}
+.bsr{display:flex;gap:11px;justify-content:center;width:100%;}
+.bst{flex:1;padding:9px 7px;border:1px solid var(--rim);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;gap:2px;background:rgba(4,11,18,0.5);}
+.bstl{font-family:'DM Mono',monospace;font-size:0.49rem;letter-spacing:0.13em;color:var(--text-dim);text-transform:uppercase;}
+.bstv{font-family:'Cormorant Garamond',serif;font-size:1.4rem;line-height:1;font-variant-numeric:tabular-nums;}
+.bside{display:flex;flex-direction:column;gap:var(--gap);}
+.hrvb{padding:12px 17px 15px;}
+#hrv-cv{width:100%;height:78px;display:block;margin-top:5px;}
+.hrvs{display:flex;gap:13px;margin-top:8px;}
+.hrvst{display:flex;flex-direction:column;gap:1px;}
+.hrvl{font-family:'DM Mono',monospace;font-size:0.49rem;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;}
+.hrvv{font-family:'DM Mono',monospace;font-size:0.8rem;color:var(--green);}
+.guib{padding:13px 17px;display:flex;flex-direction:column;gap:11px;}
+.guitxt{font-family:'Spectral',serif;font-size:0.8rem;line-height:1.72;color:var(--text);font-style:italic;}
+.bfl{display:flex;flex-direction:column;gap:4px;}
+.bfi{display:flex;gap:7px;align-items:flex-start;}
+.bfd{width:4px;height:4px;border-radius:50%;background:var(--aqua);flex-shrink:0;margin-top:6px;}
+.bft{font-size:0.74rem;color:var(--text-dim);line-height:1.5;}
+.enb{padding:12px 17px 15px;display:flex;flex-direction:column;gap:9px;}
+.enr{display:flex;align-items:center;gap:9px;}
+.enl{font-family:'DM Mono',monospace;font-size:0.54rem;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;width:55px;flex-shrink:0;}
+.entr{flex:1;height:4px;background:var(--muted);border-radius:2px;overflow:hidden;}
+.enfi{height:100%;border-radius:2px;transition:width 0.9s ease;}
+.enp{font-family:'DM Mono',monospace;font-size:0.54rem;color:var(--text-dim);width:33px;text-align:right;flex-shrink:0;}
+
+/* Claude */
+.chat-panel{display:flex;flex-direction:column;height:calc(100vh - 210px);min-height:520px;}
+.ch{padding:13px 17px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--rim);flex-shrink:0;}
+.corb{width:40px;height:40px;border-radius:50%;flex-shrink:0;background:linear-gradient(135deg,var(--claude-dim),var(--claude));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 20px rgba(216,114,80,0.3);position:relative;}
+.corb::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid rgba(216,114,80,0.28);animation:or 3.5s ease-in-out infinite;}
+@keyframes or{0%,100%{transform:scale(1);opacity:0.4;}50%{transform:scale(1.12);opacity:1;}}
+.cmeta{flex:1;}
+.ctitle{font-family:'Cinzel',serif;font-size:0.76rem;font-weight:600;letter-spacing:0.13em;color:var(--claude-pale);}
+.csub{font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.09em;color:var(--text-dim);margin-top:2px;}
+.cmbr{display:flex;gap:5px;}
+.cmb{padding:4px 9px;border:1px solid var(--rim-hi);border-radius:20px;background:transparent;font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.07em;color:var(--text-dim);cursor:pointer;transition:all var(--fast);text-transform:uppercase;}
+.cmb:hover{border-color:var(--claude-dim);color:var(--text);}
+.cmb.active{border-color:var(--claude);color:var(--claude);background:var(--claude-lo);}
+.cmsgs{flex:1;overflow-y:auto;padding:14px 17px;display:flex;flex-direction:column;gap:12px;scroll-behavior:smooth;}
+.msg{display:flex;gap:8px;align-items:flex-start;animation:mi 0.3s ease;}
+.msg.user{flex-direction:row-reverse;}
+@keyframes mi{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+.mav{width:27px;height:27px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:0.72rem;}
+.msg.assistant .mav{background:linear-gradient(135deg,var(--claude-dim),var(--claude));}
+.msg.user .mav{background:var(--muted);}
+.mbu{max-width:78%;padding:9px 13px;border-radius:var(--r);font-family:'Spectral',serif;font-size:0.8rem;line-height:1.65;font-weight:300;}
+.msg.assistant .mbu{background:rgba(216,114,80,0.07);border:1px solid rgba(216,114,80,0.18);color:var(--text-hi);border-radius:0 8px 8px 8px;}
+.msg.user .mbu{background:rgba(72,200,222,0.07);border:1px solid rgba(72,200,222,0.16);color:var(--text);border-radius:8px 0 8px 8px;font-style:italic;}
+.mt{display:block;margin-top:4px;font-family:'DM Mono',monospace;font-size:0.47rem;color:var(--text-lo);}
+.tyw{display:flex;gap:4px;align-items:center;height:16px;}
+.tyd{width:5px;height:5px;border-radius:50%;background:var(--claude);animation:td 1.3s infinite;}
+.tyd:nth-child(2){animation-delay:0.18s;}
+.tyd:nth-child(3){animation-delay:0.36s;}
+@keyframes td{0%,60%,100%{transform:translateY(0);opacity:0.35;}30%{transform:translateY(-6px);opacity:1;}}
+.cia{flex-shrink:0;padding:11px 15px;border-top:1px solid var(--rim);}
+.qps{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px;}
+.qpb{padding:4px 9px;border:1px solid var(--claude-dim);border-radius:20px;background:var(--claude-lo);font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.05em;color:var(--claude);cursor:pointer;transition:all var(--fast);}
+.qpb:hover{background:rgba(216,114,80,0.16);}
+.cir{display:flex;gap:8px;}
+textarea#cta{flex:1;height:52px;resize:none;background:rgba(4,11,18,0.85);border:1px solid var(--rim-hi);border-radius:var(--r);color:var(--text);font-family:'Spectral',serif;font-size:0.8rem;font-style:italic;padding:9px 11px;outline:none;line-height:1.5;transition:border-color var(--fast);}
+textarea#cta:focus{border-color:var(--claude-dim);}
+textarea#cta::placeholder{color:var(--text-lo);}
+.sndb{padding:0 16px;border:none;border-radius:var(--r);background:linear-gradient(135deg,var(--claude-dim),var(--claude));font-family:'Cinzel',serif;font-size:0.56rem;font-weight:600;letter-spacing:0.2em;color:var(--void);cursor:pointer;flex-shrink:0;transition:box-shadow var(--mid),transform var(--fast),opacity var(--fast);}
+.sndb:hover:not(:disabled){box-shadow:0 0 20px rgba(216,114,80,0.4);transform:translateY(-1px);}
+.sndb:disabled{opacity:0.45;cursor:not-allowed;}
+.cside{display:flex;flex-direction:column;gap:var(--gap);}
+.ctxb{padding:11px 15px;display:flex;flex-direction:column;}
+.ctxi{display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--rim);}
+.ctxi:last-child{border-bottom:none;}
+.ctxk{font-family:'DM Mono',monospace;font-size:0.51rem;letter-spacing:0.1em;color:var(--text-dim);text-transform:uppercase;width:68px;flex-shrink:0;padding-top:1px;}
+.ctxv{font-family:'Spectral',serif;font-size:0.76rem;color:var(--text);line-height:1.4;}
+.prb{padding:11px 15px;display:flex;flex-direction:column;gap:6px;}
+.prc{padding:8px 10px;border:1px solid var(--rim);border-radius:var(--r);cursor:pointer;transition:all var(--fast);background:rgba(4,11,18,0.45);}
+.prc:hover{border-color:var(--claude-dim);transform:translateX(2px);}
+.prn{font-family:'Cinzel',serif;font-size:0.61rem;font-weight:600;letter-spacing:0.08em;color:var(--claude-pale);margin-bottom:2px;}
+.prd{font-size:0.66rem;color:var(--text-dim);font-style:italic;line-height:1.4;}
+.apie{padding:8px 13px;border:1px solid var(--rose-dim);border-radius:var(--r);background:rgba(222,88,120,0.07);color:var(--rose);font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.07em;display:none;}
+.apie.show{display:block;}
+
+/* LSO */
+.lleft,.lright{display:flex;flex-direction:column;gap:var(--gap);}
+.lvb{padding:17px;display:flex;flex-direction:column;align-items:center;gap:13px;}
+#lso-cv{width:100%;height:176px;border-radius:var(--r);display:block;}
+.lsg{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;padding:11px 15px 15px;}
+.lsc{padding:10px 8px;border:1px solid var(--rim);border-radius:var(--r);cursor:pointer;transition:all var(--mid);background:rgba(4,11,18,0.5);text-align:center;}
+.lsc:hover{border-color:var(--lso-dim);transform:translateY(-1px);}
+.lsc.active{border-color:var(--lso);background:rgba(88,206,152,0.05);}
+.lsi{font-size:1.4rem;margin-bottom:4px;}
+.lsn{font-family:'Cinzel',serif;font-size:0.58rem;font-weight:600;letter-spacing:0.07em;color:var(--text-hi);margin-bottom:2px;}
+.lsr{font-family:'DM Mono',monospace;font-size:0.54rem;color:var(--lso);margin-bottom:3px;}
+.lsb{font-size:0.59rem;color:var(--text-dim);font-style:italic;line-height:1.3;}
+
+/* Oracle */
+.omain{display:flex;flex-direction:column;gap:var(--gap);}
+.oside{display:flex;flex-direction:column;gap:var(--gap);}
+.evb{padding:19px;display:flex;flex-direction:column;align-items:center;gap:15px;}
+#eye-cv{display:block;border-radius:50%;box-shadow:0 0 60px rgba(124,77,255,0.25),0 0 120px rgba(124,77,255,0.1);}
+.ests{display:flex;gap:18px;justify-content:center;}
+.est{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.estl{font-family:'DM Mono',monospace;font-size:0.49rem;letter-spacing:0.18em;color:var(--text-dim);text-transform:uppercase;}
+.estv{font-family:'Cinzel',serif;font-size:1.35rem;line-height:1;color:var(--oracle-pale);text-shadow:0 0 18px rgba(124,77,255,0.5);}
+.estu{font-family:'DM Mono',monospace;font-size:0.5rem;color:var(--text-dim);}
+.stgb{padding:13px 17px;display:flex;flex-direction:column;gap:7px;}
+.stgr{display:flex;align-items:center;gap:11px;padding:7px 9px;border:1px solid var(--rim);border-radius:var(--r);transition:all var(--mid);}
+.stgr.done{border-color:rgba(124,77,255,0.35);background:rgba(124,77,255,0.06);}
+.stgr.current{border-color:var(--oracle);background:rgba(124,77,255,0.12);box-shadow:0 0 12px rgba(124,77,255,0.15);}
+.stgnum{font-family:'Cinzel',serif;font-size:0.78rem;font-weight:900;color:var(--oracle);width:22px;flex-shrink:0;text-align:center;}
+.stgr.done .stgnum,.stgr.current .stgnum{color:var(--oracle-pale);}
+.stgnm{font-family:'Cinzel',serif;font-size:0.63rem;font-weight:600;letter-spacing:0.09em;flex:1;color:var(--text);}
+.stgr.done .stgnm,.stgr.current .stgnm{color:var(--oracle-pale);}
+.stgst{font-family:'DM Mono',monospace;font-size:0.5rem;color:var(--text-dim);}
+.stgr.done .stgst{color:var(--oracle);}
+.stgr.current .stgst{color:var(--oracle-pale);}
+.scb{padding:15px 17px;display:flex;flex-direction:column;gap:13px;}
+.sbtxt{font-family:'Spectral',serif;font-size:0.8rem;line-height:1.68;color:var(--text-dim);font-style:italic;}
+.sbrw{display:flex;gap:8px;align-items:center;}
+.sbpb{flex:1;height:3px;background:var(--muted);border-radius:2px;overflow:hidden;}
+.sbf{height:100%;width:0%;border-radius:2px;background:linear-gradient(90deg,var(--oracle-dim),var(--oracle),var(--oracle-pale));transition:width 0.3s ease;}
+.sbst{font-family:'DM Mono',monospace;font-size:0.54rem;letter-spacing:0.09em;color:var(--text-dim);min-height:1em;}
+.sbst.active{color:var(--oracle-pale);}
+.tfeed{display:flex;flex-direction:column;gap:7px;max-height:340px;overflow-y:auto;}
+.tcard{padding:10px 12px;border:1px solid rgba(124,77,255,0.2);border-radius:var(--r);background:rgba(124,77,255,0.04);transition:all var(--fast);animation:ti 0.4s ease;}
+.tcard:hover{border-color:rgba(124,77,255,0.45);transform:translateX(2px);}
+@keyframes ti{from{opacity:0;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+.thdr{display:flex;align-items:flex-start;justify-content:space-between;gap:7px;margin-bottom:4px;}
+.tttl{font-family:'Cinzel',serif;font-size:0.64rem;font-weight:600;letter-spacing:0.08em;color:var(--oracle-pale);}
+.tbdg{font-family:'DM Mono',monospace;font-size:0.47rem;padding:2px 6px;border:1px solid var(--oracle-dim);border-radius:20px;color:var(--oracle);white-space:nowrap;flex-shrink:0;}
+.tbody{font-size:0.72rem;color:var(--text-dim);font-style:italic;line-height:1.52;}
+.ttags{display:flex;gap:4px;flex-wrap:wrap;margin-top:5px;}
+.ttag{font-family:'DM Mono',monospace;font-size:0.47rem;padding:1px 5px;border:1px solid var(--rim-hi);border-radius:20px;color:var(--text-lo);}
+.optb{padding:13px 17px;display:flex;flex-direction:column;gap:9px;}
+.opsr{display:flex;align-items:center;gap:14px;padding:11px 13px;border:1px solid rgba(124,77,255,0.3);border-radius:var(--r);background:rgba(124,77,255,0.06);}
+.opsrr{position:relative;width:56px;height:56px;flex-shrink:0;}
+#opsrv{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:0.95rem;font-weight:900;color:var(--oracle-pale);}
+.opsl{font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.12em;color:var(--text-dim);text-transform:uppercase;}
+.opsd{font-family:'Spectral',serif;font-size:0.76rem;color:var(--text);font-style:italic;line-height:1.5;}
+.oprc{padding:7px 10px;border-left:2px solid var(--oracle-dim);background:rgba(124,77,255,0.03);border-radius:0 var(--r) var(--r) 0;}
+.oprl{font-family:'DM Mono',monospace;font-size:0.49rem;letter-spacing:0.11em;color:var(--oracle);text-transform:uppercase;margin-bottom:2px;}
+.oprt{font-size:0.73rem;color:var(--text-dim);font-style:italic;line-height:1.5;}
+.cmb2{padding:13px 17px;display:flex;flex-direction:column;gap:9px;}
+.cmr{display:flex;align-items:center;gap:9px;}
+.cml{font-family:'DM Mono',monospace;font-size:0.53rem;letter-spacing:0.09em;color:var(--text-dim);text-transform:uppercase;width:65px;flex-shrink:0;}
+.cmtr{flex:1;height:5px;background:var(--muted);border-radius:3px;overflow:hidden;}
+.cmfl{height:100%;border-radius:3px;transition:width 1s ease;}
+.cmv{font-family:'DM Mono',monospace;font-size:0.54rem;color:var(--text-dim);width:33px;text-align:right;flex-shrink:0;}
+
+/* Journal */
+.jmain,.jside{display:flex;flex-direction:column;gap:var(--gap);}
+.jb{padding:13px 17px;display:flex;flex-direction:column;gap:9px;}
+textarea#jta{width:100%;height:108px;resize:none;background:rgba(4,11,18,0.85);border:1px solid var(--rim-hi);border-radius:var(--r);color:var(--text);font-family:'Spectral',serif;font-size:0.86rem;font-style:italic;padding:10px 12px;outline:none;line-height:1.62;transition:border-color var(--fast);}
+textarea#jta:focus{border-color:var(--gold-dim);}
+textarea#jta::placeholder{color:var(--text-lo);}
+.jmr{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+.jtag{padding:3px 8px;border:1px solid var(--rim);border-radius:20px;font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.08em;color:var(--text-dim);}
+.jac{display:flex;gap:6px;flex-wrap:wrap;}
+.el{padding:11px 15px;display:flex;flex-direction:column;gap:6px;max-height:400px;overflow-y:auto;}
+.entr{padding:8px 10px;background:rgba(4,11,18,0.5);border-left:2px solid var(--gold-dim);border-radius:0 var(--r) var(--r) 0;transition:border-color var(--fast);}
+.entr:hover{border-left-color:var(--gold);}
+.em{font-family:'DM Mono',monospace;font-size:0.49rem;color:var(--text-lo);letter-spacing:0.07em;margin-bottom:3px;display:flex;gap:7px;flex-wrap:wrap;}
+.et{font-size:0.77rem;color:var(--text);font-style:italic;line-height:1.52;}
+.stb{padding:11px 15px;display:flex;flex-direction:column;}
+.str{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--rim);}
+.str:last-child{border-bottom:none;}
+.stk{font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.09em;color:var(--text-dim);text-transform:uppercase;}
+.stv{font-family:'Cinzel',serif;font-size:0.86rem;color:var(--gold);}
+.fhb{padding:10px 15px;display:flex;flex-direction:column;gap:4px;}
+.fhr{display:flex;align-items:center;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--rim);}
+.fhr:last-child{border-bottom:none;}
+.fhm{font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.07em;color:var(--gold-pale);}
+.fhc{font-family:'DM Mono',monospace;font-size:0.54rem;color:var(--text-dim);}
+
+/* Footer */
+footer{flex-shrink:0;border-top:1px solid var(--rim);padding:11px 0;display:flex;align-items:center;gap:15px;}
+.sbar{flex:1;height:3px;background:var(--muted);border-radius:2px;overflow:hidden;cursor:pointer;}
+.sfill{height:100%;width:0%;border-radius:2px;background:linear-gradient(90deg,var(--violet),var(--aqua),var(--gold),var(--tone));transition:width 1s linear;}
+.fst{display:flex;gap:16px;}
+.fsti{display:flex;flex-direction:column;align-items:center;}
+.fstl{font-family:'DM Mono',monospace;font-size:0.47rem;letter-spacing:0.11em;color:var(--text-lo);text-transform:uppercase;}
+.fstv{font-family:'Spectral',serif;font-size:0.9rem;color:var(--text);}
+
+/* Toast */
+#toast{position:fixed;bottom:25px;right:25px;z-index:9999;padding:9px 16px;border-radius:var(--r);background:var(--panel-hi);border:1px solid var(--gold-dim);font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.09em;color:var(--gold);pointer-events:none;opacity:0;transform:translateY(7px);transition:opacity 0.3s ease,transform 0.3s ease;box-shadow:0 8px 32px rgba(0,0,0,0.5);max-width:310px;}
+#toast.show{opacity:1;transform:translateY(0);}
+#toast.tc{border-color:var(--claude-dim);color:var(--claude-pale);}
+#toast.to{border-color:var(--oracle-dim);color:var(--oracle-pale);}
+#toast.tt{border-color:var(--tone-dim);color:var(--tone-pale);}
+#toast.ter{border-color:var(--rose-dim);color:var(--rose);}
+
+/* Loader */
+#loader{position:fixed;inset:0;z-index:10000;background:var(--void);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity 0.6s ease;}
+#loader.fade{opacity:0;pointer-events:none;}
+.lwm{font-family:'Cinzel',serif;font-size:2.8rem;font-weight:900;letter-spacing:0.3em;background:linear-gradient(135deg,var(--gold-dim),var(--gold),var(--gold-pale),var(--tone-pale),var(--oracle-pale));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.lring{width:46px;height:46px;border-radius:50%;border:2px solid var(--rim-hi);border-top-color:var(--gold);animation:ls 0.9s linear infinite;}
+@keyframes ls{to{transform:rotate(360deg);}}
+.ltxt{font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.24em;color:var(--text-dim);text-transform:uppercase;}
+
+.kbh{position:fixed;bottom:25px;left:25px;z-index:100;font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.11em;color:var(--text-lo);pointer-events:none;display:flex;gap:10px;flex-wrap:wrap;max-width:380px;}
+.kb{display:inline-flex;gap:5px;align-items:center;}
+.kbk{padding:1px 5px;border:1px solid var(--rim-hi);border-radius:2px;color:var(--text-dim);}
+
+@media(max-width:1100px){
+  #pg-freq{grid-template-columns:1fr;}
+  .sidebar{grid-column:1;}
+  .flg{grid-template-columns:repeat(4,1fr);}
+  #pg-claude{grid-template-columns:1fr 270px;}
+  #pg-oracle{grid-template-columns:1fr;}
+  .oside{grid-column:1;}
+  .tones-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:800px){
+  #pg-freq,#pg-breath,#pg-claude,#pg-lso,#pg-oracle,#pg-journal{grid-template-columns:1fr;}
+  .flg{grid-template-columns:repeat(3,1fr);}
+  .logo-wm{font-size:1.5rem;}
+  .chat-panel{height:68vh;}
+  #mandala-cv{width:270px!important;height:270px!important;}
+  .tones-grid{grid-template-columns:1fr;}
+  .tone-mastbar{flex-wrap:wrap;}
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="lwm">SOMA ∞</div>
+  <div class="lring"></div>
+  <div class="ltxt">Tuning sacred frequencies…</div>
+</div>
+
+<!-- COSMOS -->
+<div id="cosmos" aria-hidden="true">
+  <canvas id="starfield"></canvas>
+  <div class="nebula n1"></div><div class="nebula n2"></div>
+  <div class="nebula n3"></div><div class="nebula n4"></div>
+</div>
+
+<div id="app">
+
+<!-- HEADER -->
+<header>
+  <div class="logo">
+    <div class="logo-wm">SOMA ∞</div>
+    <div class="logo-sub">
+      Sacred Frequency Healing System
+      <span class="badge"><span class="bdot"></span>Claude Edition</span>
+      <span class="badge b-tone"><span class="bdot"></span>Healing Tones</span>
+      <span class="badge b-oracle"><span class="bdot"></span>Oracle Intelligence</span>
+    </div>
+  </div>
+  <div class="hr">
+    <div class="hclock"><span class="hclock-l">Session</span><span class="hclock-v" id="hdr-clock">00:00:00</span></div>
+    <div class="spill" id="spill"><div class="sdot" id="sdot"></div><span id="stxt">READY</span></div>
+  </div>
+</header>
+
+<!-- TABS -->
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" onclick="switchTab('freq',this)" data-tab="freq">⟡ Frequencies<span class="tsc">[1]</span></button>
+  <button class="tab-btn t-tone" onclick="switchTab('tones',this)" data-tab="tones">♪ Healing Tones<span class="tsc">[2]</span></button>
+  <button class="tab-btn" onclick="switchTab('breath',this)" data-tab="breath">◎ Breathwork<span class="tsc">[3]</span></button>
+  <button class="tab-btn t-claude" onclick="switchTab('claude',this)" data-tab="claude">✦ Claude Guide<span class="tsc">[4]</span></button>
+  <button class="tab-btn t-lso" onclick="switchTab('lso',this)" data-tab="lso">◈ LSO · Light<span class="tsc">[5]</span></button>
+  <button class="tab-btn t-oracle" onclick="switchTab('oracle',this)" data-tab="oracle">👁 Oracle<span class="tsc">[6]</span></button>
+  <button class="tab-btn" onclick="switchTab('journal',this)" data-tab="journal">⊞ Journal<span class="tsc">[7]</span></button>
+  <button class="tab-btn" onclick="openUpgrade()" style="margin-left:auto;background:linear-gradient(135deg,rgba(201,168,76,.22),rgba(201,168,76,.08));border:1px solid rgba(201,168,76,.4);">✦ Upgrade</button>
+</nav>
+
+<!-- ═══ PAGE 1: FREQUENCIES ═══ -->
+<div id="pg-freq" class="tab-page active" role="tabpanel">
+  <div class="panel viz-panel">
+    <div class="ptitle">Sacred Geometry Visualizer<span class="ptag">MANDALA · LIVE</span></div>
+    <div class="viz-body">
+      <canvas id="mandala-cv" width="370" height="370"></canvas>
+      <canvas id="wave-cv"></canvas>
+      <div class="fro">
+        <div class="fs"><span class="fs-l">Base Freq</span><span class="fs-v" id="dbase">432</span><span class="fs-u">Hz</span></div>
+        <div class="fs"><span class="fs-l">Binaural</span><span class="fs-v" id="dbeat" style="color:var(--aqua)">7.83</span><span class="fs-u">Hz</span></div>
+        <div class="fs"><span class="fs-l">Brain State</span><span class="fs-v" id="dstate" style="font-size:1rem;color:var(--violet)">Theta</span><span class="fs-u">WAVE</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="panel"><div class="ptitle">Healing Controls<span class="ptag">MASTER</span></div>
+      <div class="cb">
+        <button class="btn-p" id="play-btn" onclick="togglePlay()">▶ &nbsp; BEGIN SESSION</button>
+        <div class="sg"><div class="sr"><span>Master Volume</span><span class="sv" id="vvol">75%</span></div><input type="range" id="slvol" min="0" max="100" value="75" oninput="setVol(this)"></div>
+        <div class="sg"><div class="sr"><span>Binaural Intensity</span><span class="sv" id="vbin">60%</span></div><input type="range" id="slbin" min="0" max="100" value="60" oninput="setBin(this)"></div>
+        <div class="sg"><div class="sr"><span>Harmonic Depth</span><span class="sv" id="vharm">40%</span></div><input type="range" id="slharm" min="0" max="100" value="40" oninput="setHarm(this)"></div>
+        <div style="font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.2em;color:var(--text-lo);text-transform:uppercase;">Mode</div>
+        <div class="mg" id="mgrid">
+          <button class="btn-sm active" onclick="setMode(this,'healing')">Healing</button>
+          <button class="btn-sm" onclick="setMode(this,'meditation')">Meditation</button>
+          <button class="btn-sm" onclick="setMode(this,'sleep')">Sleep</button>
+          <button class="btn-sm" onclick="setMode(this,'focus')">Focus</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel"><div class="ptitle">Brainwave Spectrum<span class="ptag">SIM</span></div><div class="bwl" id="bwl"></div></div>
+    <div class="panel"><div class="ptitle">Chakra Frequency Map<span class="ptag">7 CENTERS</span></div><div class="chl" id="chl"></div></div>
+  </div>
+  <div class="panel flp" style="grid-column:1/-1">
+    <div class="ptitle">Sacred Frequency Library<span class="ptag">SOLFEGGIO · SCHUMANN · UNIVERSAL</span></div>
+    <div class="flg" id="flg"></div>
+  </div>
+</div>
+
+<!-- ═══ PAGE 2: HEALING TONES ═══ -->
+<div id="pg-tones" class="tab-page" role="tabpanel">
+
+  <div class="panel tp">
+    <div class="ptitle tt">Healing Tone Library — Individual Playable Frequencies<span class="ptag">LAYERED HARMONICS · ADSR · BINAURAL</span></div>
+    <div style="padding:14px 18px 12px;">
+      <div class="tone-mastbar">
+        <div class="tmb-title">🎵 &nbsp; Master Tone Controls</div>
+        <div class="tmb-sl-grp">
+          <span class="tmb-sl-lbl">Volume</span>
+          <input class="tmb-sl" id="tms-vol" type="range" min="0" max="100" value="70" oninput="setToneVol(this)">
+          <span class="tmb-sl-v" id="tmv-vol">70%</span>
+        </div>
+        <div class="tmb-sl-grp">
+          <span class="tmb-sl-lbl">Reverb</span>
+          <input class="tmb-sl" id="tms-rev" type="range" min="0" max="100" value="45" oninput="setToneRev(this)">
+          <span class="tmb-sl-v" id="tmv-rev">45%</span>
+        </div>
+        <div class="tmb-sl-grp">
+          <span class="tmb-sl-lbl">Harmonics</span>
+          <input class="tmb-sl" id="tms-harm" type="range" min="0" max="100" value="55" oninput="setToneHarm(this)">
+          <span class="tmb-sl-v" id="tmv-harm">55%</span>
+        </div>
+        <button class="stop-all-btn" onclick="stopAllTones()">■ &nbsp; STOP ALL</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tones-grid" id="tones-grid"></div>
+
+</div>
+
+<!-- ═══ PAGE 3: BREATHWORK ═══ -->
+<div id="pg-breath" class="tab-page" role="tabpanel">
+  <div style="display:flex;flex-direction:column;gap:var(--gap)">
+    <div class="panel"><div class="ptitle">Breathwork Visualizer<span class="ptag">PRANAYAMA</span></div>
+      <div class="bvb">
+        <div class="borb"><div class="bring" id="br1"></div><div class="bring r2" id="br2"></div><div class="bring r3"></div><div class="bcore" id="bcore"><div class="bcp" id="bcp">READY</div><div class="bcc" id="bcc">—</div></div></div>
+        <div class="bpg">
+          <button class="bpb active" onclick="setBreath(this,'478')"><span class="bpbn">4·7·8</span><span class="bpbs">Relax</span></button>
+          <button class="bpb" onclick="setBreath(this,'box')"><span class="bpbn">Box</span><span class="bpbs">4·4·4·4</span></button>
+          <button class="bpb" onclick="setBreath(this,'coh')"><span class="bpbn">5·5</span><span class="bpbs">Coherence</span></button>
+          <button class="bpb" onclick="setBreath(this,'wim')"><span class="bpbn">Wim Hof</span><span class="bpbs">Power</span></button>
+        </div>
+        <div class="bsr">
+          <div class="bst"><span class="bstl">Cycles</span><span class="bstv" id="bcyc" style="color:var(--aqua)">0</span></div>
+          <div class="bst"><span class="bstl">HRV Est.</span><span class="bstv" id="bhrv" style="color:var(--green)">—</span></div>
+          <div class="bst"><span class="bstl">Coherence</span><span class="bstv" id="bcoh" style="color:var(--lso)">—</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel"><div class="ptitle">HRV Monitor<span class="ptag">ESTIMATED</span></div><div class="hrvb"><canvas id="hrv-cv"></canvas><div class="hrvs"><div class="hrvst"><span class="hrvl">Mean</span><span class="hrvv" id="hrvm">—</span></div><div class="hrvst"><span class="hrvl">Peak</span><span class="hrvv" id="hrvp">—</span></div><div class="hrvst"><span class="hrvl">Trend</span><span class="hrvv" id="hrvt">—</span></div></div></div></div>
+  </div>
+  <div class="bside">
+    <div class="panel"><div class="ptitle">Pattern Guidance</div><div class="guib"><div class="guitxt" id="gtxt">Select a pattern.</div><div style="font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.15em;color:var(--text-lo);text-transform:uppercase;">Benefits</div><div class="bfl" id="bfl"></div></div></div>
+    <div class="panel"><div class="ptitle">Synchrony Matrix</div><div class="enb" id="enb"></div></div>
+    <div class="panel"><div class="ptitle">Session Report</div><div style="padding:11px 15px;display:flex;flex-direction:column;" id="rptb"></div></div>
+  </div>
+</div>
+
+<!-- ═══ PAGE 4: CLAUDE ═══ -->
+<div id="pg-claude" class="tab-page" role="tabpanel">
+  <div class="panel cp chat-panel">
+    <div class="ch">
+      <div class="corb">✦</div>
+      <div class="cmeta"><div class="ctitle">Claude · Healing Guide</div><div class="csub">AI-powered advisor · Session context-aware</div></div>
+      <div class="cmbr">
+        <button class="cmb active" onclick="setCM(this,'guide')">Guide</button>
+        <button class="cmb" onclick="setCM(this,'prescribe')">Prescribe</button>
+        <button class="cmb" onclick="setCM(this,'reflect')">Reflect</button>
+      </div>
+    </div>
+    <div class="cmsgs" id="cmsgs" aria-live="polite"></div>
+    <div class="cia">
+      <div class="apie" id="apie">⚠ Unable to reach Claude. Check your connection.</div>
+      <div class="qps">
+        <button class="qpb" onclick="qps(this)">What frequency should I use?</button>
+        <button class="qpb" onclick="qps(this)">Guide me through a meditation</button>
+        <button class="qpb" onclick="qps(this)">Explain my brain state</button>
+        <button class="qpb" onclick="qps(this)">Create a healing protocol</button>
+        <button class="qpb" onclick="qps(this)">Deepen this session</button>
+      </div>
+      <div class="cir"><textarea id="cta" placeholder="Ask Claude about frequencies, healing, meditation…"></textarea><button class="sndb" id="sndb" onclick="sendC()">SEND</button></div>
+    </div>
+  </div>
+  <div class="cside">
+    <div class="panel cp"><div class="ptitle ct">Session Context<span class="ptag">AUTO</span></div><div class="ctxb" id="ctxb"></div></div>
+    <div class="panel cp"><div class="ptitle ct">Healing Protocols</div><div class="prb" id="prb"></div></div>
+  </div>
+</div>
+
+<!-- ═══ PAGE 5: LSO ═══ -->
+<div id="pg-lso" class="tab-page" role="tabpanel">
+  <div class="lleft">
+    <div class="panel lp"><div class="ptitle lt">Light Frequency Visualizer<span class="ptag">CHROMOTHERAPY</span></div><div class="lvb"><canvas id="lso-cv"></canvas><div style="font-family:'Spectral',serif;font-size:0.79rem;text-align:center;color:var(--text-dim);font-style:italic;max-width:370px;line-height:1.68;" id="lsod">Light Sound Optimization entrains both visual and auditory pathways simultaneously.</div></div></div>
+    <div class="panel lp"><div class="ptitle lt">Chromotherapy Programs</div><div class="lsg" id="lsg"></div></div>
+  </div>
+  <div class="lright">
+    <div class="panel lp"><div class="ptitle lt">Entrainment Levels<span class="ptag">LIVE</span></div><div class="enb" id="lsoe"></div></div>
+    <div class="panel lp"><div class="ptitle lt">Photobiomodulation Benefits</div><div style="padding:11px 15px;display:flex;flex-direction:column;" id="lsob"></div></div>
+    <div class="panel lp"><div class="ptitle lt">Active Protocol</div><div style="padding:11px 15px;display:flex;flex-direction:column;gap:9px;" id="lsop"></div></div>
+  </div>
+</div>
+
+<!-- ═══ PAGE 6: ORACLE ═══ -->
+<div id="pg-oracle" class="tab-page" role="tabpanel">
+  <div class="omain">
+    <div class="panel op"><div class="ptitle ot">Third Eye Activation · Ajna Mandala<span class="ptag">👁 852Hz · GAMMA</span></div>
+      <div class="evb">
+        <canvas id="eye-cv" width="290" height="290"></canvas>
+        <div class="ests">
+          <div class="est"><span class="estl">Activation</span><span class="estv" id="epct">0</span><span class="estu">%</span></div>
+          <div class="est"><span class="estl">Freq</span><span class="estv" style="font-size:1.05rem">852</span><span class="estu">Hz</span></div>
+          <div class="est"><span class="estl">Stage</span><span class="estv" id="estg" style="font-size:0.85rem;color:var(--oracle)">Dormant</span><span class="estu">STATE</span></div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button class="btn-sm" onclick="activateEye()" id="eyebtn" style="border-color:var(--oracle-dim);color:var(--oracle-pale)">⊕ Activate</button>
+          <button class="btn-sm" onclick="resetEye()">↺ Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel op"><div class="ptitle ot">Activation Stages<span class="ptag">7 GATES</span></div><div class="stgb" id="stgb"></div></div>
+    <div class="panel op"><div class="ptitle ot">Claude Oracle · Live Intelligence Scan<span class="ptag">WEB · CONSCIOUSNESS</span></div>
+      <div class="scb">
+        <div class="sbtxt">Claude searches the live web for trending consciousness, awakening, and healing frequency data — then synthesizes it into your personal optimization protocol.</div>
+        <div class="sbrw">
+          <button class="btn-p" id="scanbtn" onclick="runScan()" style="height:42px;font-size:0.66rem;letter-spacing:0.22em;background:linear-gradient(135deg,var(--oracle-dim),var(--oracle));color:#fff;flex-shrink:0;width:auto;padding:0 18px;">👁 SCAN FIELD</button>
+          <div class="sbpb"><div class="sbf" id="sbf"></div></div>
+        </div>
+        <div class="sbst" id="sbst">Oracle awaiting activation…</div>
+        <div class="tfeed" id="tfeed"><div style="font-family:'Spectral',serif;font-size:0.76rem;color:var(--text-lo);font-style:italic;padding:6px 0;">Activate the Oracle to scan trending consciousness intelligence.</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="oside">
+    <div class="panel op"><div class="ptitle ot">Consciousness Optimization<span class="ptag">LIVE SCORE</span></div>
+      <div class="optb" id="optb">
+        <div class="opsr">
+          <div class="opsrr"><canvas id="oscore-cv" width="56" height="56"></canvas><div id="opsrv">0</div></div>
+          <div><div class="opsl">Optimization Score</div><div class="opsd" id="opsd">Begin a session and run an Oracle scan to calculate your score.</div></div>
+        </div>
+        <div id="oprecs"></div>
+      </div>
+    </div>
+    <div class="panel op"><div class="ptitle ot">Consciousness Spectrum<span class="ptag">LIVE</span></div><div class="cmb2" id="cmb2"></div></div>
+    <div class="panel op"><div class="ptitle ot">Trending Insights<span class="ptag">ORACLE</span></div><div style="padding:11px 15px;display:flex;flex-direction:column;gap:6px;" id="tinsi"><div style="font-family:'Spectral',serif;font-size:0.74rem;color:var(--text-lo);font-style:italic;">Run an Oracle scan.</div></div></div>
+  </div>
+</div>
+
+<!-- ═══ PAGE 7: JOURNAL ═══ -->
+<div id="pg-journal" class="tab-page" role="tabpanel">
+  <div class="jmain">
+    <div class="panel"><div class="ptitle">Healing Journal<span class="ptag">INTENTIONS</span></div><div class="jb"><textarea id="jta" placeholder="Record your intentions, experiences and insights…"></textarea><div class="jmr"><span class="jtag" id="jtf">No Frequency</span><span class="jtag" id="jtt">00:00:00</span><span class="jtag" id="jtm">healing</span></div><div class="jac"><button class="btn-sm active" onclick="saveJ()">⊕ Save</button><button class="btn-sm" onclick="exportJ()">↓ Export</button><button class="btn-sm danger" onclick="clearJ()">✕ Clear</button></div></div></div>
+    <div class="panel"><div class="ptitle">Session Log<span class="ptag">AUDITABLE</span></div><div class="el" id="el"></div></div>
+  </div>
+  <div class="jside">
+    <div class="panel"><div class="ptitle">Practice Statistics</div><div class="stb" id="stb"></div></div>
+    <div class="panel"><div class="ptitle">Frequency History</div><div class="fhb" id="fhb"></div></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="sbar" id="sbar" onclick="seekBar(event)"><div class="sfill" id="sfill"></div></div>
+  <div class="fst">
+    <div class="fsti"><span class="fstl">Sessions</span><span class="fstv" id="ftsess">0</span></div>
+    <div class="fsti"><span class="fstl">Total Time</span><span class="fstv" id="fttime">0m</span></div>
+    <div class="fsti"><span class="fstl">Active Freq</span><span class="fstv" id="ftfreq">—</span></div>
+    <div class="fsti"><span class="fstl">Consciousness</span><span class="fstv" id="ftcon" style="color:var(--oracle-pale)">—</span></div>
+  </div>
+</footer>
+</div>
+
+<div class="kbh" aria-hidden="true">
+  <span class="kb"><span class="kbk">Space</span>Play</span>
+  <span class="kb"><span class="kbk">1–7</span>Tabs</span>
+  <span class="kb"><span class="kbk">←→</span>Freq</span>
+  <span class="kb"><span class="kbk">T</span>Tones</span>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+/* ═══════════════════════════
+   HEALING TONE DATA
+═══════════════════════════ */
+const TONE_DATA = [
+  {
+    hz:174, name:'Foundation', solfeggio:'Earth Tone', glyph:'⊕',
+    tagline:'The deepest Solfeggio — pain relief & grounding',
+    color:'#e05060',
+    overview:`174 Hz is the lowest of the ancient Solfeggio frequencies and acts as a natural energetic anesthetic. It reduces physical and emotional pain, eases tension in organs and muscles, and creates a powerful sense of security and love. Ancient monastic traditions used this frequency as the foundational drone for healing chant, believing it sent loving messages directly to the cells of the body.`,
+    chakra:'Root · Muladhara', element:'Earth', note:'F2', duration:'20–40 min',
+    tradition:'Ancient Solfeggio',
+    benefits:['Natural pain relief — reduces physical and emotional discomfort','Releases tension held in muscles and connective tissue','Creates deep sense of safety, security, and groundedness','Supports organ function through cellular resonance','Ideal base frequency for trauma release work'],
+    when:'Physical discomfort, chronic pain, grounding practice, trauma release, feeling unrooted or unsafe',
+    avoid:'Not recommended for those needing mental stimulation or clarity of thought',
+    method:'Lie down, eyes closed. Place one hand on your lower abdomen. Breathe slowly and visualize deep red-orange light at the base of your spine growing with each exhale.',
+    research:'Research from medical facilities suggests infrasonic frequencies in this range activate the body\'s natural pain-response inhibitors.',
+    session:'15–40 min · Morning or evening · Best with eyes closed and headphones',
+  },
+  {
+    hz:285, name:'Cellular Repair', solfeggio:'Tissue Tone', glyph:'◌',
+    tagline:'Restructuring and regenerating damaged tissue',
+    color:'#de8830',
+    overview:`285 Hz is believed to influence the body's energy fields, sending harmonic signals that instruct damaged or diseased tissues to restructure themselves toward their original healthy state. It leaves the body feeling rejuvenated and energized after sessions. Practitioners of energy medicine describe it as "the frequency that remembers what the body is supposed to be."`,
+    chakra:'Sacral · Svadhisthana', element:'Water', note:'D3', duration:'20–35 min',
+    tradition:'Ancient Solfeggio',
+    benefits:['Accelerates wound and tissue healing','Boosts immune system resilience','Restructures damaged cellular fields','Promotes energetic rejuvenation throughout the body','Enhances the body\'s natural repair processes'],
+    when:'Recovery from illness or injury, immune support, post-surgery, periods of low energy, chronic fatigue',
+    avoid:'Begin gently — powerful regenerative effect may cause brief fatigue as the body processes',
+    method:'Focus awareness on any area requiring healing. Visualize bright amber-orange light entering that region, bringing new life and perfect cellular information.',
+    research:'Frequency therapy researchers have explored the 285 Hz range for its reported effects on tissue repair markers in cell culture studies.',
+    session:'20–35 min · Best during rest periods or sleep · Combine with 528 Hz for enhanced effect',
+  },
+  {
+    hz:396, name:'UT — Liberation', solfeggio:'First Solfeggio', glyph:'△',
+    tagline:'Dissolving guilt, fear and subconscious blocks',
+    color:'#e04060',
+    overview:`396 Hz is the first tone of the sacred Solfeggio scale, named "UT" from the Latin hymn Ut queant laxis. It directly targets two of the most powerful human inhibitors: guilt and fear. These emotions often operate below conscious awareness, subtly blocking manifestation and joy. 396 Hz cleanses these energetic sediments, liberating the lower chakras and turning grief into a foundation for growth.`,
+    chakra:'Root · Muladhara', element:'Earth', note:'G4', duration:'15–30 min',
+    tradition:'Gregorian Solfeggio · Dr. Joseph Puleo (1999)',
+    benefits:['Dissolves deep-rooted fear and anxiety patterns','Clears subconscious guilt that blocks forward movement','Transforms grief and loss into lessons and liberation','Grounds scattered emotional energy into clarity','Liberates suppressed feelings without overwhelm'],
+    when:'Emotional clearing, releasing past regrets, anxiety work, grief processing, before manifestation practice',
+    avoid:'May surface buried emotions — have a journal nearby and practice in a safe, private space',
+    method:'Sit upright. Breathe deeply into the belly. On each exhale, consciously release what no longer serves you. Let the tone dissolve what you\'re ready to release.',
+    research:'Referenced extensively in Dr. Leonard Horowitz\'s work on Solfeggio frequencies and their psychospiritual applications.',
+    session:'15–30 min · Best in morning or when beginning emotional clearing work',
+  },
+  {
+    hz:417, name:'RE — Transformation', solfeggio:'Second Solfeggio', glyph:'◈',
+    tagline:'Breaking negative patterns and facilitating change',
+    color:'#e07828',
+    overview:`417 Hz is the RE frequency — Resonare fibris — the frequency of undoing. It facilitates change at the deepest level, clearing the residue of traumatic experiences from the cellular memory and breaking the cycles of repeated destructive patterns. When you feel stuck in repeating life circumstances, 417 Hz works like an energetic solvent on the adhesive of unconscious patterning.`,
+    chakra:'Sacral · Svadhisthana', element:'Water/Fire', note:'A♭4', duration:'20–30 min',
+    tradition:'Ancient Solfeggio · Hymn of St. John',
+    benefits:['Breaks unconscious negative behavioural loops','Clears traumatic memories stored in cellular tissue','Encourages the nervous system toward positive change','Energizes the body with creative, transformative force','Facilitates smooth life transitions and new beginnings'],
+    when:'Breaking habits, life transitions, clearing old trauma, manifesting change, relationship patterns',
+    avoid:'Powerful change agent — begin with shorter sessions during stable periods',
+    method:'Write down one pattern or situation you wish to transform. Hold this intention clearly as you listen. Visualize orange light flowing through your body, dissolving old patterns.',
+    research:'Part of Dr. Joseph Puleo\'s rediscovery of the ancient Solfeggio scale from Numbers 7:12-83.',
+    session:'20–30 min · Evening or during conscious change-work',
+  },
+  {
+    hz:432, name:'Universal Tuning', solfeggio:'Cosmic Harmony', glyph:'◎',
+    tagline:'The frequency of nature, Phi, and the cosmos',
+    color:'#c9a84c',
+    overview:`432 Hz is perhaps the most debated and revered tuning in modern healing practice. Found encoded in sacred architecture (the Great Pyramid, Stonehenge), ancient instruments, and natural phenomena including the Saturn ring resonance, this frequency sits in mathematical harmony with Phi (the golden ratio), DNA geometry, and the Schumann Resonance. Stradivarius, Mozart, and Verdi all reportedly worked in 432 Hz tuning, and many musicians report it feels more "alive" and emotionally resonant than the modern 440 Hz standard.`,
+    chakra:'Heart Bridge · All Chakras', element:'Aether', note:'A4 (natural)', duration:'Unlimited',
+    tradition:'Universal / Ancient · Pythagoras · Sacred Geometry',
+    benefits:['Deeply calming — reduces heart rate and cortisol naturally','Aligns with natural Phi mathematics found in all living things','Anti-inflammatory effect reported by consistent practitioners','Enhances emotional depth and spiritual connection in music','Supports heart coherence and overall systemic harmony'],
+    when:'Daily meditation, general healing and relaxation, music listening, before sleep, any time you want natural alignment',
+    avoid:'No known contraindications — safe for unlimited daily use',
+    method:'Simply listen and relax. No specific technique required — the frequency does the work. Allow your body to naturally entrain to this cosmic tuning.',
+    research:'Dr. Leonard Horowitz, Brian T. Collins, and independent researchers have documented the mathematical correspondences between 432 Hz and natural systems.',
+    session:'Unlimited · Ideal as background frequency during daily activities, work, or sleep',
+  },
+  {
+    hz:528, name:'MI — Miracle Tone', solfeggio:'Love Frequency', glyph:'✿',
+    tagline:'DNA repair, transformation and the heart of creation',
+    color:'#48c882',
+    overview:`528 Hz is known as the "Love Frequency," the "Miracle Tone," and the "DNA Repair Frequency." It sits at the mathematical centre of the visible light spectrum within rainbows, in sunlight, in the chlorophyll of plants, and allegedly within the geometric structure of human DNA itself. Dr. Len Horowitz describes 528 Hz as central to the "musical mathematical matrix of creation." Biochemists use this frequency in research exploring DNA repair. It is associated with the colour green — the frequency of the heart.`,
+    chakra:'Solar Plexus → Heart bridge · Manipura → Anahata', element:'Fire/Air', note:'C5', duration:'20–45 min',
+    tradition:'Ancient Solfeggio · Dr. Leonard Horowitz · Dr. Joseph Puleo',
+    benefits:['Associated with DNA strand repair and genetic healing','Opens and expands the heart energy field','Reduces stress at the genetic level — lowers cortisol 18–20%','Facilitates miraculous transformation and positive outcomes','Enhances creativity and spiritual awareness dramatically'],
+    when:'Healing intentions, heart opening, creative work, DNA repair meditation, spiritual breakthrough work',
+    avoid:'Highly activating — may bring up deep emotional material as the heart opens',
+    method:'Place hands on your heart. Breathe slowly and deeply. Visualize emerald green light expanding from your chest outward with each breath, healing everything it touches.',
+    research:'Dr. Glen Rein\'s research (1998) studied the effect of Solfeggio frequencies on DNA, showing potential conformational changes with certain tones.',
+    session:'20–45 min · Most powerful during morning golden hour or at solar noon',
+  },
+  {
+    hz:639, name:'FA — Connection', solfeggio:'Relationship Tone', glyph:'♡',
+    tagline:'Healing relationships and opening the heart to others',
+    color:'#48c8de',
+    overview:`639 Hz is the FA frequency — Famuli tuorum — the tone of harmonious relationships. It works directly on the energetic systems governing our connections to others — partners, family, friends, and the broader community. In a world of increasing disconnection and conflict, 639 Hz acts as a carrier frequency for empathy, understanding, and loving communication. It literally resonates at a frequency that harmonizes interpersonal energy fields.`,
+    chakra:'Heart · Anahata', element:'Air', note:'E♭5', duration:'20–30 min',
+    tradition:'Ancient Solfeggio',
+    benefits:['Heals damaged or strained relationships energetically','Enhances communication — promotes clear, loving expression','Opens the heart to give and receive love without fear','Builds tolerance, understanding and empathy','Strengthens community, family and romantic bonds'],
+    when:'Relationship healing, before important conversations, family healing, community work, loneliness, heartbreak',
+    avoid:'May amplify feelings of longing or grief if recent loss — proceed gently',
+    method:'Think of a relationship you wish to heal or deepen. Hold that person in your heart with compassion. Breathe love outward toward them as you listen.',
+    research:'Part of the ancient Solfeggio system rediscovered and documented in sacred scripture by Dr. Joseph Puleo.',
+    session:'20–30 min · Before social interactions or during relationship healing rituals',
+  },
+  {
+    hz:741, name:'SOL — Intuition', solfeggio:'Sixth Tone', glyph:'◎',
+    tagline:'Cleansing toxins and awakening your inner voice',
+    color:'#9458b4',
+    overview:`741 Hz is the SOL frequency — Solve polluti — which translates as "cleanse the pollution." Operating at the level of the throat and third eye, this frequency dissolves toxins from cells, awakens intuitive knowing, and activates creative problem-solving capabilities. It works on the electromagnetic field surrounding the body, clearing distortions that create confusion and suppress one's authentic voice. Those who consistently use 741 Hz report sharper intuition and more confident self-expression.`,
+    chakra:'Throat · Vishuddha', element:'Ether/Space', note:'F#5', duration:'15–25 min',
+    tradition:'Ancient Solfeggio',
+    benefits:['Dissolves physical and electromagnetic toxicity','Powerfully awakens intuition and inner knowing','Clears creative blocks and throat-related suppression','Promotes authentic, truthful self-expression','Enhances problem-solving through intuitive insight'],
+    when:'Creative blocks, decision-making, detox support, finding your voice, throat issues, truth-speaking work',
+    avoid:'May cause temporary detox symptoms — ensure adequate hydration before and after sessions',
+    method:'Focus awareness on your throat. Breathe deeply, and on each exhale, allow any suppressed thoughts or words to release gently. Trust the insights that arise.',
+    research:'Frequency researchers associate the 741 Hz range with effects on electromagnetic cellular coherence and detoxification pathways.',
+    session:'15–25 min · Morning for creative work; evening for clearing accumulated toxins',
+  },
+  {
+    hz:852, name:'LA — Third Eye', solfeggio:'Sixth Solfeggio', glyph:'✵',
+    tagline:'Pineal activation, spiritual clarity and seeing truth',
+    color:'#7c4dff',
+    overview:`852 Hz is the LA frequency — Labii reatum — directly connected to the third eye chakra and the pineal gland. It returns spiritual order by enabling the practitioner to see through illusions and perceive the true nature of reality beyond conditioned thinking. The pineal gland contains magnetite crystals and photosensitive cells, re

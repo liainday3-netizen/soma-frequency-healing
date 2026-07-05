@@ -1,0 +1,1048 @@
+sponding to specific frequencies. 852 Hz is considered the primary activator of this photosensitive "inner eye," awakening higher perception, clairvoyance, and direct spiritual knowing.`,
+    chakra:'Third Eye · Ajna', element:'Light', note:'A♭5', duration:'20–45 min',
+    tradition:'Ancient Solfeggio · Dr. Joseph Puleo · Vedic tradition',
+    benefits:['Directly stimulates and activates the pineal gland','Returns the mind to spiritual clarity beyond conditioned illusion','Opens clairvoyant perception and inner visual awareness','Amplifies intuitive flashes and psychic sensitivity','Accelerates spiritual awakening and higher consciousness states'],
+    when:'Third eye activation, meditation, spiritual practice, seeking truth, before visionary work, when feeling spiritually disconnected',
+    avoid:'May produce powerful visionary experiences — not recommended while operating machinery',
+    method:'Close your eyes. Focus your attention at the point between your eyebrows. Breathe deeply and visualize a spinning indigo wheel of light growing brighter with each breath cycle.',
+    research:'The pineal gland\'s documented photosensitivity and its DMT-producing capacity (Rick Strassman, 2001) suggest potential responsiveness to specific frequency inputs.',
+    session:'20–45 min · Best in darkness or candlelight · Perfect combined with Oracle Third Eye protocol',
+  },
+  {
+    hz:963, name:'SI — Crown', solfeggio:'Seventh Solfeggio', glyph:'❋',
+    tagline:'Divine consciousness, unity and the return to Oneness',
+    color:'#a848c8',
+    overview:`963 Hz is the highest of the original Solfeggio frequencies — SI, from Sancte Iohannes. It is associated with the experience of returning to Oneness — the direct, non-conceptual recognition of the unified field of consciousness underlying all reality. This frequency activates the pineal gland's crystalline structure, opens the crown chakra, and is described in mystical traditions as the vibration of God consciousness or pure Being. Many practitioners describe profound experiences of unity, love, and timelessness during 963 Hz sessions.`,
+    chakra:'Crown · Sahasrara', element:'Cosmic Consciousness', note:'B5', duration:'20–45 min',
+    tradition:'Ancient Solfeggio · Crown Chakra traditions globally',
+    benefits:['Activates the crystalline pineal gland structures','Opens the crown chakra to higher dimensional awareness','Facilitates direct experience of unity consciousness','Dissolves the illusion of separation from Source','Supports the deepest states of meditation and prayer'],
+    when:'Deep meditation, spiritual practice, prayer, consciousness expansion, transcendence work, preparing for sleep',
+    avoid:'Profoundly altered states possible — use only in safe, quiet environments',
+    method:'Sit or lie in complete stillness. Surrender all effort. Allow the frequency to carry you beyond thinking into pure awareness. Simply be.',
+    research:'Ancient Vedic texts describe the Sahasrara frequency as the vibrational key to liberation (Moksha) — the highest attainment of human consciousness.',
+    session:'20–45 min · Evening or deep meditation sessions · Combine with 528 Hz for heart-crown activation',
+  },
+  {
+    hz:7.83, name:'Schumann Resonance', solfeggio:"Earth's Heartbeat", glyph:'🌍',
+    tagline:"The resonant frequency of Earth's electromagnetic field",
+    color:'#48c882',
+    overview:`7.83 Hz is one of the most scientifically documented healing frequencies on Earth. Discovered by physicist W.O. Schumann in 1952, this is the primary resonant frequency of the electromagnetic cavity between Earth's surface and ionosphere — essentially, the "heartbeat" of the planet. Human EEG patterns evolved over millions of years entrained to this frequency. Modern exposure to electromagnetic pollution, WiFi, and artificial lighting disrupts this ancient synchrony. Restoring this connection is associated with profound health benefits.`,
+    chakra:'Root · Earth Star', element:'Earth', note:'Not musical — electromagnetic', duration:'30–60 min',
+    tradition:'Physics (Schumann 1952) · Indigenous Earth traditions globally',
+    benefits:['Re-establishes the ancient human-Earth bioelectric connection','Resets circadian rhythms disrupted by artificial light and EMF','Documented immune system enhancement in research settings','Reduces effects of electromagnetic hypersensitivity','Improves sleep quality and restores natural biological rhythms'],
+    when:'After prolonged technology/EMF exposure, jet lag, disconnection from nature, insomnia, immune challenges, modern stress',
+    avoid:'No contraindications — widely considered the most universally safe healing frequency',
+    method:'Ideally combine with barefoot grounding on grass or earth. Breathe naturally. Imagine your body re-synchronising with the living pulse of the planet beneath you.',
+    research:'Luke Hendricks, William Bengston, and others have published peer-reviewed research on Schumann resonance and biological effects on immune function, cognition, and circadian regulation.',
+    session:'30–60 min · Daily practice recommended · Powerful combined with earthing/grounding outdoors',
+  },
+  {
+    hz:1111, name:'Gateway Frequency', solfeggio:'Ascension Tone', glyph:'∞',
+    tagline:'Synchronicity, spiritual acceleration and higher guidance',
+    color:'#9458b4',
+    overview:`1111 Hz sits outside the classical Solfeggio system and enters the realm of numerological and metaphysical significance. Associated globally with spiritual awakening codes, the 11:11 synchronicity phenomenon, and angelic communication, this high frequency is used in advanced spiritual practice to accelerate consciousness processing, open channels for higher guidance, and clear energetic blockages at subtle levels of the field. Its high vibration makes sessions shorter but intensely potent — particularly for those already active on a spiritual path.`,
+    chakra:'Soul Star · Above Crown', element:'Cosmic Fire', note:'C♯6', duration:'10–20 min',
+    tradition:'New paradigm metaphysics · Numerological codes · Angelic traditions',
+    benefits:['Accelerates spiritual development and consciousness expansion','Enhances synchronicity awareness and meaningful coincidence','Opens channels for receiving higher guidance and inspiration','Clears energetic blockages in the upper chakra field','Amplifies manifestation and co-creative capacity'],
+    when:'Advanced meditation, spiritual acceleration, visionary work, when experiencing intense synchronicities, manifestation practice',
+    avoid:'Highly activating — limit sessions to 20 minutes maximum; not for beginners without foundational practice',
+    method:'Set a clear, high intention. Ground yourself first with the Root Tone (174 Hz) for 5 minutes, then transition to 1111 Hz. Allow any visions, insights, or guidance to arise naturally.',
+    research:'The 1111 phenomenon has been studied in consciousness research contexts examining synchronicity, Jung\'s concept of the collective unconscious, and transpersonal psychology.',
+    session:'10–20 min only · Advanced practitioners · Preceded by grounding frequency',
+  },
+];
+
+const FREQUENCIES = [
+  {name:'UT',hz:396,desc:'Liberating guilt & fear',color:'#e04060'},
+  {name:'RE',hz:417,desc:'Undoing situations & change',color:'#de9428'},
+  {name:'MI',hz:528,desc:'Transformation & DNA repair',color:'#48c882'},
+  {name:'FA',hz:639,desc:'Connecting relationships',color:'#48c8de'},
+  {name:'SOL',hz:741,desc:'Awakening intuition',color:'#9458b4'},
+  {name:'LA',hz:852,desc:'Third Eye · Spiritual order',color:'#7c4dff'},
+  {name:'SI',hz:963,desc:'Divine consciousness',color:'#c9a84c'},
+  {name:'Schumann',hz:7.83,desc:"Earth's resonance",color:'#48c882'},
+  {name:'432 Hz',hz:432,desc:'Universal tuning',color:'#c9a84c'},
+  {name:'174 Hz',hz:174,desc:'Foundation & pain relief',color:'#e05060'},
+  {name:'285 Hz',hz:285,desc:'Cellular repair',color:'#de9428'},
+  {name:'1111 Hz',hz:1111,desc:'Gateway consciousness',color:'#9458b4'},
+];
+
+const CHAKRAS=[
+  {name:'Muladhara',glyph:'⊕',hz:396,color:'#cc3030'},
+  {name:'Svadhisthana',glyph:'◈',hz:417,color:'#e06028'},
+  {name:'Manipura',glyph:'✦',hz:528,color:'#d8bc28'},
+  {name:'Anahata',glyph:'✿',hz:639,color:'#48c882'},
+  {name:'Vishuddha',glyph:'◎',hz:741,color:'#48c8de'},
+  {name:'Ajna',glyph:'✵',hz:852,color:'#7c4dff'},
+  {name:'Sahasrara',glyph:'❋',hz:963,color:'#a848c8'},
+];
+
+const BWAVES=[{name:'Delta',range:'0.5–4',color:'#4858c8',base:0.14},{name:'Theta',range:'4–8',color:'#9458b4',base:0.54},{name:'Alpha',range:'8–13',color:'#48c882',base:0.34},{name:'Beta',range:'13–30',color:'#de9428',base:0.18},{name:'Gamma',range:'30–100',color:'#de5878',base:0.09}];
+
+const BPATS={
+  '478':{phases:[4,7,8,0],labels:['INHALE','HOLD','EXHALE','—'],guidance:'The 4-7-8 technique activates your parasympathetic nervous system instantly, reducing cortisol and inducing deep relaxation.',benefits:['Reduces anxiety within 60 seconds','Lowers heart rate and blood pressure','Promotes rapid sleep onset','Activates vagus nerve directly']},
+  'box':{phases:[4,4,4,4],labels:['INHALE','HOLD','EXHALE','HOLD'],guidance:'Box breathing creates perfect symmetrical regulation of the autonomic nervous system, used by Navy SEALs for stress mastery.',benefits:['Balances sympathetic/parasympathetic ANS','Sharpens focus and cognitive clarity','Reduces stress hormones','Builds respiratory resilience']},
+  'coh':{phases:[5,0,5,0],labels:['INHALE','—','EXHALE','—'],guidance:'5-5 coherence breathing synchronizes heart rate variability with respiration at 0.1 Hz, maximizing cardiac coherence.',benefits:['Maximizes HRV coherence','Synchronizes brain hemispheres','Optimizes immune function','Deepens emotional regulation']},
+  'wim':{phases:[2,0,2,0],labels:['INHALE','—','EXHALE','—'],guidance:'Wim Hof power breathing rapidly oxygenates blood, releases natural adrenaline, and alkalizes for deep healing.',benefits:['Boosts immune response','Increases energy dramatically','Builds mental fortitude','Alkalizes blood pH']},
+};
+
+const LSO_PROGS=[{icon:'🔴',name:'Red',range:'620–750 nm',benefit:'Cellular energy',color:'#e03030'},{icon:'🟠',name:'Orange',range:'590–620 nm',benefit:'Creativity',color:'#e07020'},{icon:'🟡',name:'Yellow',range:'560–590 nm',benefit:'Clarity',color:'#c8b820'},{icon:'🟢',name:'Green',range:'490–560 nm',benefit:'Balance',color:'#30b050'},{icon:'🔵',name:'Blue',range:'430–490 nm',benefit:'Peace',color:'#2858c8'},{icon:'🟣',name:'Violet',range:'380–430 nm',benefit:'Spirit',color:'#8030b8'}];
+
+const EYE_STAGES=[{name:'Dormant Stillness',desc:'Baseline — settling into stillness'},{name:'Pineal Awakening',desc:'852 Hz resonance begins stimulating Ajna'},{name:'Inner Phosphenes',desc:'Visual cortex activation — inner light arising'},{name:'Hypnagogic Vision',desc:'Theta bridge — imagery & archetypal forms'},{name:'Temporal Dissolution',desc:'Sense of time relaxing — deep theta'},{name:'Non-Dual Awareness',desc:'Observer and observed merging into oneness'},{name:'Crown Illumination',desc:'Sahasrara opens — full spectrum activation'}];
+
+/* ═══════════════════════════
+   STATE
+═══════════════════════════ */
+const _si=(v)=>{const n=parseInt(v);return isNaN(n)?0:n;};
+const _sj=(v,f)=>{try{return JSON.parse(v)||f;}catch{return f;}};
+
+const S={
+  playing:false,freqIdx:8,mode:'healing',sessionSec:0,
+  totalSess:_si(localStorage.getItem('soma5_s')),
+  totalMins:_si(localStorage.getItem('soma5_m')),
+  volume:0.75,binInt:0.60,harmDepth:0.40,
+  activeChakra:3,breathKey:'478',
+  bCycles:0,bwAmps:BWAVES.map(b=>b.base),
+  jnl:_sj(localStorage.getItem('soma5_j'),[]),
+  fhist:_sj(localStorage.getItem('soma5_fh'),[]),
+  claudeMode:'guide',claudeHistory:[],
+  lsoIdx:3,hrv:[],currentTab:'freq',
+  // Oracle
+  oracleDone:false,oTrends:[],optScore:0,
+  // Third Eye
+  eyeActive:false,eyePct:0,eyeStage:0,
+  // Tones
+  toneVol:0.70,toneRev:0.45,toneHarm:0.55,
+  activeToneIdx:-1,
+};
+
+/* ═══════════════════════════
+   AUDIO ENGINE — MASTER
+═══════════════════════════ */
+let actx=null,masterGain=null,comp=null;
+let leftOsc=null,rightOsc=null,harmOsc=null;
+
+function audioInit(){
+  if(actx) return true;
+  try{
+    actx=new(window.AudioContext||window.webkitAudioContext)();
+    comp=actx.createDynamicsCompressor();
+    comp.threshold.value=-12;comp.ratio.value=4;
+    masterGain=actx.createGain();
+    masterGain.gain.setValueAtTime(S.volume*0.26,actx.currentTime);
+    masterGain.connect(comp);comp.connect(actx.destination);
+    return true;
+  }catch(e){return false;}
+}
+
+function audioStart(){
+  if(!audioInit()) return;
+  audioStop();
+  const f=FREQUENCIES[S.freqIdx];if(!f) return;
+  const base=f.hz<20?200:Math.min(f.hz,1200);
+  const beat=getBeatHz();
+
+  const merge=actx.createChannelMerger(2);merge.connect(masterGain);
+  const lo=actx.createOscillator(),lg=actx.createGain();
+  lo.frequency.value=base;lo.type='sine';lg.gain.value=0.3*S.binInt;
+  lo.connect(lg);lg.connect(merge,0,0);
+  const ro=actx.createOscillator(),rg=actx.createGain();
+  ro.frequency.value=base+beat;ro.type='sine';rg.gain.value=0.3*S.binInt;
+  ro.connect(rg);rg.connect(merge,0,1);
+  const ho=actx.createOscillator(),hg=actx.createGain();
+  ho.type='triangle';ho.frequency.value=base*1.5;hg.gain.value=0.06*S.harmDepth;
+  ho.connect(hg);hg.connect(masterGain);
+  [lo,ro,ho].forEach(o=>o.start());
+  leftOsc=lo;rightOsc=ro;harmOsc=ho;
+}
+
+function audioStop(){
+  [leftOsc,rightOsc,harmOsc].forEach(o=>{try{if(o){o.stop();o.disconnect();}}catch(e){}});
+  leftOsc=rightOsc=harmOsc=null;
+}
+
+function getBeatHz(){return{healing:7.83,meditation:6,sleep:2,focus:14}[S.mode]||7.83;}
+function getBrainState(){return{healing:'Theta',meditation:'Alpha',sleep:'Delta',focus:'Beta'}[S.mode]||'Theta';}
+
+/* ═══════════════════════════
+   TONE ENGINE — INDIVIDUAL PLAYABLE TONES
+   Rich layered synthesis with ADSR, harmonics, tremolo, reverb-delay
+═══════════════════════════ */
+const toneNodes={};// {idx: {nodes:[], gain:GainNode, timer:setInterval, startTime}}
+
+function buildToneAudio(idx){
+  if(!audioInit()) return false;
+
+  const td=TONE_DATA[idx];
+  const hz=td.hz;
+  const baseHz=hz<20?200:hz;
+  const nodes=[];
+
+  // Master gain for this tone with ADSR
+  const toneGain=actx.createGain();
+  toneGain.gain.setValueAtTime(0,actx.currentTime);
+  toneGain.gain.linearRampToValueAtTime(S.toneVol*0.22,actx.currentTime+2.5); // attack
+
+  // Simple reverb via delay feedback network
+  const delay=actx.createDelay(2.0);
+  delay.delayTime.value=0.12+S.toneRev*0.4;
+  const delayGain=actx.createGain();
+  delayGain.gain.value=S.toneRev*0.35;
+  delay.connect(delayGain);
+  delayGain.connect(delay);
+  delayGain.connect(toneGain);
+
+  // LFO for tremolo warmth
+  const lfo=actx.createOscillator();
+  const lfoGain=actx.createGain();
+  lfo.frequency.value=0.08+Math.random()*0.04;
+  lfoGain.gain.value=0.04;
+  lfo.connect(lfoGain);
+  lfo.start();
+  nodes.push(lfo);
+
+  function makeLayer(freq,type,gainVal,detune=0){
+    const o=actx.createOscillator();
+    const g=actx.createGain();
+    o.type=type; o.frequency.value=freq; o.detune.value=detune;
+    g.gain.value=gainVal;
+    lfoGain.connect(g.gain); // tremolo modulation
+    o.connect(g); g.connect(delay); g.connect(toneGain);
+    o.start();
+    nodes.push(o);
+    return o;
+  }
+
+  // Layer 1: fundamental (sine — pure)
+  makeLayer(baseHz,'sine',0.5);
+  // Layer 2: octave up (triangle — warm)
+  makeLayer(baseHz*2,'triangle',0.18*S.toneHarm,-2);
+  // Layer 3: perfect 5th (sine — harmonic)
+  makeLayer(baseHz*1.5,'sine',0.12*S.toneHarm,1);
+  // Layer 4: octave+fifth (triangle — bright)
+  makeLayer(baseHz*3,'triangle',0.06*S.toneHarm,-1);
+  // Layer 5: sub-octave (sine — depth)
+  if(baseHz>40) makeLayer(baseHz*0.5,'sine',0.08*S.toneHarm,0);
+
+  // Binaural: right channel slight offset for theta entrainment
+  const binOsc=actx.createOscillator();
+  const binGain=actx.createGain();
+  binOsc.type='sine'; binOsc.frequency.value=baseHz+7; binGain.gain.value=0.08;
+  binOsc.connect(binGain); binGain.connect(toneGain);
+  binOsc.start(); nodes.push(binOsc);
+
+  toneGain.connect(masterGain);
+
+  return{nodes,gain:toneGain,delay,delayGain,lfoGain,startTime:actx.currentTime};
+}
+
+function playTone(idx){
+  if(!audioInit()) return;
+  if(actx.state==='suspended') actx.resume();
+
+  // If already playing, stop it
+  if(toneNodes[idx]){
+    stopTone(idx); return;
+  }
+
+  const result=buildToneAudio(idx);
+  if(!result) return;
+
+  toneNodes[idx]=result;
+
+  // Timer
+  result.timer=setInterval(()=>{
+    const el=document.getElementById('tone-timer-'+idx);
+    if(el){
+      const elapsed=actx.currentTime-result.startTime;
+      el.textContent=fmtTime(Math.round(elapsed));
+    }
+  },1000);
+
+  S.activeToneIdx=idx;
+  updateToneCardState(idx,true);
+  toast(`♪ ${TONE_DATA[idx].hz} Hz — ${TONE_DATA[idx].name}`,'tt');
+}
+
+function stopTone(idx){
+  const tn=toneNodes[idx];if(!tn) return;
+  clearInterval(tn.timer);
+  const now=actx.currentTime;
+  // Fade out
+  tn.gain.gain.setValueAtTime(tn.gain.gain.value,now);
+  tn.gain.gain.linearRampToValueAtTime(0,now+1.8);
+  setTimeout(()=>{
+    tn.nodes.forEach(n=>{try{n.stop();n.disconnect();}catch(e){}});
+    try{tn.gain.disconnect();tn.delay.disconnect();tn.delayGain.disconnect();}catch(e){}
+    delete toneNodes[idx];
+  },2000);
+  if(S.activeToneIdx===idx) S.activeToneIdx=-1;
+  updateToneCardState(idx,false);
+}
+
+function stopAllTones(){
+  Object.keys(toneNodes).forEach(idx=>stopTone(parseInt(idx)));
+  toast('■ All tones stopped');
+}
+
+function setToneVol(el){
+  S.toneVol=el.value/100;
+  document.getElementById('tmv-vol').textContent=el.value+'%';
+  Object.values(toneNodes).forEach(tn=>{
+    if(tn.gain&&actx) tn.gain.gain.setTargetAtTime(S.toneVol*0.22,actx.currentTime,0.05);
+  });
+}
+
+function setToneRev(el){
+  S.toneRev=el.value/100;
+  document.getElementById('tmv-rev').textContent=el.value+'%';
+  Object.values(toneNodes).forEach(tn=>{
+    if(tn.delayGain) tn.delayGain.gain.value=S.toneRev*0.35;
+    if(tn.delay) tn.delay.delayTime.value=0.12+S.toneRev*0.4;
+  });
+}
+
+function setToneHarm(el){
+  S.toneHarm=el.value/100;
+  document.getElementById('tmv-harm').textContent=el.value+'%';
+}
+
+function updateToneCardState(idx,playing){
+  const card=document.getElementById('tc-'+idx);
+  const playBtn=document.getElementById('tc-play-'+idx);
+  const timer=document.getElementById('tone-timer-'+idx);
+  if(card) card.classList.toggle('playing',playing);
+  if(playBtn){
+    playBtn.textContent=playing?'■':'▶';
+    playBtn.classList.toggle('playing',playing);
+    if(!playing && timer) timer.textContent='00:00:00';
+  }
+}
+
+/* ═══════════════════════════
+   TONE OSCILLOSCOPE
+═══════════════════════════ */
+const scopeAnimations={};
+
+function startScopeAnim(idx){
+  if(scopeAnimations[idx]) return;
+  const cv=document.getElementById('tc-scope-'+idx);if(!cv) return;
+  const ctx=cv.getContext('2d');
+  let t=0;
+  const td=TONE_DATA[idx];
+  function draw(){
+    if(!toneNodes[idx]){scopeAnimations[idx]=null;return;}
+    cv.width=cv.parentElement?.offsetWidth-28||200;
+    cv.height=40;
+    const W=cv.width,H=cv.height;
+    ctx.clearRect(0,0,W,H);
+    ctx.fillStyle='rgba(4,11,18,0.5)';ctx.fillRect(0,0,W,H);
+    // Multi-harmonic wave
+    ctx.beginPath();
+    for(let x=0;x<W;x++){
+      const n=x/W;
+      const y=H/2+(
+        Math.sin(n*Math.PI*20+t*0.06)*0.5+
+        Math.sin(n*Math.PI*40+t*0.04)*0.2+
+        Math.sin(n*Math.PI*60+t*0.03)*0.12
+      )*H*0.38;
+      x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+    }
+    ctx.strokeStyle=td.color+'cc';ctx.lineWidth=1.5;
+    ctx.shadowBlur=6;ctx.shadowColor=td.color;ctx.stroke();ctx.shadowBlur=0;
+    t++;
+    scopeAnimations[idx]=requestAnimationFrame(draw);
+  }
+  draw();
+}
+
+function stopScopeAnim(idx){
+  if(scopeAnimations[idx]){cancelAnimationFrame(scopeAnimations[idx]);scopeAnimations[idx]=null;}
+  const cv=document.getElementById('tc-scope-'+idx);if(!cv) return;
+  const ctx=cv.getContext('2d');
+  cv.width=cv.parentElement?.offsetWidth-28||200;cv.height=40;
+  ctx.fillStyle='rgba(4,11,18,0.5)';ctx.fillRect(0,0,cv.width,cv.height);
+  // Draw flatline
+  ctx.beginPath();ctx.moveTo(0,cv.height/2);ctx.lineTo(cv.width,cv.height/2);
+  ctx.strokeStyle=TONE_DATA[idx].color+'44';ctx.lineWidth=1;ctx.stroke();
+}
+
+/* ═══════════════════════════
+   BUILD TONES PAGE
+═══════════════════════════ */
+function buildTonesPage(){
+  const grid=document.getElementById('tones-grid');if(!grid) return;
+  grid.innerHTML=TONE_DATA.map((td,i)=>`
+    <div class="tone-card" id="tc-${i}" style="--tc:${td.color}">
+      <div class="tc-head">
+        <div class="tc-left">
+          <div class="tc-name-row">
+            <span class="tc-glyph">${td.glyph}</span>
+            <div>
+              <div class="tc-name" style="color:${td.color}">${td.name}</div>
+              <div style="font-family:'DM Mono',monospace;font-size:0.5rem;letter-spacing:0.14em;color:var(--text-lo);margin-top:1px;">${td.solfeggio}</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:5px;margin-top:4px;">
+            <span class="tc-hz-badge" style="color:${td.color}">${td.hz}</span>
+            <span class="tc-hz-unit">Hz</span>
+          </div>
+          <div class="tc-tagline">${td.tagline}</div>
+        </div>
+        <button class="tc-play" id="tc-play-${i}"
+          style="border-color:${td.color};color:${td.color}"
+          onclick="handleTonePlay(${i})" aria-label="Play ${td.name} tone">▶</button>
+      </div>
+
+      <div class="tc-scope" id="tc-scope-wrap-${i}">
+        <canvas id="tc-scope-${i}" height="40"></canvas>
+      </div>
+
+      <div class="tc-timer" id="tc-timer-row-${i}">
+        <span class="tc-timer-icon">⏱</span>
+        <span class="tc-timer-text">Session time</span>
+        <span class="tc-timer-val" id="tone-timer-${i}">00:00:00</span>
+      </div>
+
+      <div class="tc-info">
+        <div class="tc-tabs">
+          <button class="tc-tab active" onclick="tcTab(${i},this,'overview')">Overview</button>
+          <button class="tc-tab" onclick="tcTab(${i},this,'benefits')">Benefits</button>
+          <button class="tc-tab" onclick="tcTab(${i},this,'usage')">How to Use</button>
+        </div>
+
+        <div class="tc-panel active" id="tcp-${i}-overview">
+          <div class="tc-desc">${td.overview}</div>
+          <div class="tc-meta-grid">
+            <div class="tc-meta-item"><div class="tc-meta-key">Chakra</div><div class="tc-meta-val">${td.chakra}</div></div>
+            <div class="tc-meta-item"><div class="tc-meta-key">Element</div><div class="tc-meta-val">${td.element}</div></div>
+            <div class="tc-meta-item"><div class="tc-meta-key">Tradition</div><div class="tc-meta-val">${td.tradition}</div></div>
+            <div class="tc-meta-item"><div class="tc-meta-key">Duration</div><div class="tc-meta-val">${td.duration}</div></div>
+          </div>
+          <div style="padding:7px 10px;border:1px solid rgba(255,255,255,0.06);border-radius:var(--r);background:rgba(4,11,18,0.35);margin-top:2px;">
+            <div style="font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.12em;color:var(--text-lo);text-transform:uppercase;margin-bottom:3px;">Research Note</div>
+            <div style="font-size:0.72rem;color:var(--text-dim);font-style:italic;line-height:1.5;">${td.research}</div>
+          </div>
+        </div>
+
+        <div class="tc-panel" id="tcp-${i}-benefits">
+          <div class="tc-benefit-list">
+            ${td.benefits.map(b=>`<div class="tc-benefit"><div class="tc-bdot" style="background:${td.color}"></div><div class="tc-btext">${b}</div></div>`).join('')}
+          </div>
+          <div style="margin-top:6px;padding:8px 10px;border-left:2px solid ${td.color}44;background:rgba(4,11,18,0.35);border-radius:0 var(--r) var(--r) 0;">
+            <div style="font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.12em;color:var(--text-lo);text-transform:uppercase;margin-bottom:2px;">When to use</div>
+            <div style="font-size:0.73rem;color:var(--text-dim);font-style:italic;line-height:1.5;">${td.when}</div>
+          </div>
+        </div>
+
+        <div class="tc-panel" id="tcp-${i}-usage">
+          <div class="tc-usage-list">
+            <div class="tc-usage-item" style="border-color:${td.color}88">
+              <div class="tc-usage-label" style="color:${td.color}">Technique</div>
+              <div class="tc-usage-val">${td.method}</div>
+            </div>
+            <div class="tc-usage-item" style="border-color:var(--rim-hi)">
+              <div class="tc-usage-label" style="color:var(--text-dim)">Recommended session</div>
+              <div class="tc-usage-val">${td.session}</div>
+            </div>
+            ${td.avoid?`<div class="tc-usage-item" style="border-color:var(--rose-dim)">
+              <div class="tc-usage-label" style="color:var(--rose)">Note</div>
+              <div class="tc-usage-val" style="color:var(--text-dim)">${td.avoid}</div>
+            </div>`:''}
+          </div>
+        </div>
+      </div>
+
+    </div>`).join('');
+
+  // Init scope flatlines
+  setTimeout(()=>{
+    TONE_DATA.forEach((_,i)=>stopScopeAnim(i));
+  },100);
+}
+
+function handleTonePlay(idx){
+  if(toneNodes[idx]){
+    stopTone(idx);
+    stopScopeAnim(idx);
+  }else{
+    playTone(idx);
+    startScopeAnim(idx);
+    // Also lock session frequency to this tone
+    const fIdx=FREQUENCIES.findIndex(f=>f.hz===TONE_DATA[idx].hz);
+    if(fIdx>=0) selectFreq(fIdx);
+  }
+}
+
+function tcTab(cardIdx,btn,panel){
+  // Deactivate all tabs in this card
+  const card=document.getElementById('tc-'+cardIdx);if(!card) return;
+  card.querySelectorAll('.tc-tab').forEach(t=>t.classList.remove('active'));
+  card.querySelectorAll('.tc-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  const p=document.getElementById(`tcp-${cardIdx}-${panel}`);
+  if(p) p.classList.add('active');
+}
+
+/* ═══════════════════════════
+   STARFIELD
+═══════════════════════════ */
+(function(){
+  const cv=document.getElementById('starfield'),ctx=cv.getContext('2d');
+  let stars=[];
+  function resize(){cv.width=window.innerWidth;cv.height=window.innerHeight;stars=Array.from({length:210},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.2+0.18,a:Math.random()*Math.PI*2,s:Math.random()*0.003+0.001}));}
+  function draw(){ctx.clearRect(0,0,cv.width,cv.height);stars.forEach(s=>{s.a+=s.s;const al=(Math.sin(s.a)*0.5+0.5)*0.5+0.06;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=`rgba(185,215,242,${al})`;ctx.fill();});requestAnimationFrame(draw);}
+  new ResizeObserver(resize).observe(document.body);resize();draw();
+})();
+
+/* ═══════════════════════════
+   MANDALA
+═══════════════════════════ */
+(function(){
+  const cv=document.getElementById('mandala-cv'),ctx=cv.getContext('2d');
+  const W=cv.width,H=cv.height,cx=W/2,cy=H/2;let t=0;
+  const COLS=['#c9a84c','#48c8de','#9458b4','#48c882','#de5878','#4870d8','#de9428'];
+  function col(i){return COLS[(i+S.freqIdx)%COLS.length];}
+  function petal(ang,r,len,w,c,a){ctx.save();ctx.translate(cx,cy);ctx.rotate(ang);ctx.beginPath();ctx.ellipse(0,-len/2,w/2,len/2,0,0,Math.PI*2);ctx.fillStyle=c+Math.floor(a*255).toString(16).padStart(2,'0');ctx.fill();ctx.restore();}
+  const LY=[{p:6,r:24,l:65,w:22,o:0},{p:8,r:54,l:52,w:16,o:Math.PI/8},{p:12,r:82,l:42,w:13,o:0},{p:6,r:108,l:32,w:20,o:Math.PI/12},{p:18,r:142,l:15,w:7,o:Math.PI/18}];
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const bc=FREQUENCIES[S.freqIdx]?.color||'#c9a84c';
+    const g=ctx.createRadialGradient(cx,cy,0,cx,cy,180);g.addColorStop(0,bc+'1e');g.addColorStop(1,'transparent');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+    LY.forEach((l,li)=>{const sp=(li%2===0?1:-1)*t*(0.0007+li*0.00022);for(let p=0;p<l.p;p++){const ang=(Math.PI*2/l.p)*p+l.o+sp;petal(ang,l.r*(1+Math.sin(t*0.022+p+li)*0.09),l.l,l.w,col(li),0.1+Math.sin(t*0.016+li)*0.04);}});
+    [148,116,84,52,28,12].forEach((r,i)=>{const a=0.2+Math.sin(t*0.03+i)*0.1;ctx.beginPath();ctx.arc(cx,cy,r*(1+Math.sin(t*0.016+i)*0.04),0,Math.PI*2);ctx.strokeStyle=col(i)+Math.floor(a*255).toString(16).padStart(2,'0');ctx.lineWidth=0.65;ctx.stroke();});
+    for(let l=0;l<12;l++){const ang=(Math.PI*2/12)*l+t*0.0035;ctx.save();ctx.translate(cx,cy);ctx.rotate(ang);ctx.beginPath();ctx.moveTo(0,15);ctx.lineTo(0,145);ctx.strokeStyle=`rgba(201,168,76,${0.05+Math.sin(t*0.02+l)*0.03})`;ctx.lineWidth=0.5;ctx.stroke();ctx.restore();}
+    CHAKRAS.forEach((ch,i)=>{const ang=(Math.PI*2/7)*i-Math.PI/2+t*0.0015;const r=138+Math.sin(t*0.032+i)*4;const x=cx+Math.cos(ang)*r,y=cy+Math.sin(ang)*r;const gr=4+Math.sin(t*0.045+i)*1.5;const grd=ctx.createRadialGradient(x,y,0,x,y,gr*3.5);grd.addColorStop(0,ch.color+'bb');grd.addColorStop(1,'transparent');ctx.fillStyle=grd;ctx.beginPath();ctx.arc(x,y,gr*3.5,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(x,y,gr,0,Math.PI*2);ctx.fillStyle=ch.color;ctx.fill();});
+    t++;requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* WAVEFORM */
+(function(){
+  const cv=document.getElementById('wave-cv'),ctx=cv.getContext('2d');let wt=0;
+  function draw(){cv.width=(cv.parentElement?.offsetWidth-34)||330;cv.height=34;ctx.clearRect(0,0,cv.width,cv.height);const c=FREQUENCIES[S.freqIdx]?.color||'#48c8de';const amp=S.playing?0.52:0.08;ctx.beginPath();for(let x=0;x<cv.width;x++){const n=x/cv.width;const y=17+(Math.sin(n*Math.PI*18+wt*0.048)*0.65+Math.sin(n*Math.PI*4+wt*0.012)*0.35)*13*amp;x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.strokeStyle=c+'99';ctx.lineWidth=1.5;ctx.shadowBlur=7;ctx.shadowColor=c;ctx.stroke();ctx.shadowBlur=0;wt++;requestAnimationFrame(draw);}
+  draw();
+})();
+
+/* HRV */
+(function(){
+  const cv=document.getElementById('hrv-cv');if(!cv) return;
+  const ctx=cv.getContext('2d');let ft=0,data=[];
+  function draw(){cv.width=(cv.parentElement?.offsetWidth-34)||330;cv.height=78;const W=cv.width,H=cv.height;ctx.clearRect(0,0,W,H);for(let y=0;y<H;y+=20){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.strokeStyle='rgba(255,255,255,0.03)';ctx.lineWidth=0.5;ctx.stroke();}if(S.playing&&ft%28===0){const v=62+Math.sin(ft*0.018)*14+(Math.random()-0.5)*9;data.push(Math.max(38,Math.min(104,v)));if(data.length>56)data.shift();if(data.length>2){const mean=(data.reduce((a,b)=>a+b,0)/data.length).toFixed(0);const peak=Math.max(...data).toFixed(0);document.getElementById('hrvm').textContent=mean+' ms';document.getElementById('hrvp').textContent=peak+' ms';document.getElementById('bhrv').textContent=mean+' ms';document.getElementById('hrvt').textContent=data.length>5&&data[data.length-1]>data[data.length-5]?'↑ Rising':'→ Stable';S.hrv=[...data];}}if(data.length>1){ctx.beginPath();data.forEach((v,i)=>{const x=(i/(data.length-1))*W,y=H-(v/110)*H;i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);});ctx.strokeStyle='#48c882aa';ctx.lineWidth=1.5;ctx.shadowBlur=5;ctx.shadowColor='#48c882';ctx.stroke();ctx.shadowBlur=0;ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.closePath();ctx.fillStyle='rgba(72,200,130,0.06)';ctx.fill();}ft++;requestAnimationFrame(draw);}
+  draw();
+})();
+
+/* LSO */
+(function(){
+  const cv=document.getElementById('lso-cv');if(!cv) return;
+  const ctx=cv.getContext('2d');let lt=0;
+  function draw(){const W=cv.offsetWidth||460;cv.width=W;cv.height=176;const H=176;ctx.clearRect(0,0,W,H);const c=LSO_PROGS[S.lsoIdx]?.color||'#58ce98';const grd=ctx.createLinearGradient(0,0,W,H);grd.addColorStop(0,'rgba(0,0,0,0)');grd.addColorStop(0.4,c+(S.playing?'14':'09'));grd.addColorStop(0.6,c+(S.playing?'1e':'0d'));grd.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=grd;ctx.fillRect(0,0,W,H);for(let r=0;r<5;r++){const px=W/2+Math.sin(lt*0.009+r*1.3)*W*0.3;const py=H/2+Math.cos(lt*0.007+r*1.1)*H*0.28;const g2=ctx.createRadialGradient(px,py,0,px,py,H*0.7);g2.addColorStop(0,c+(S.playing?'30':'14'));g2.addColorStop(1,'transparent');ctx.fillStyle=g2;ctx.fillRect(0,0,W,H);}ctx.beginPath();for(let x=0;x<W;x++){const y=H/2+Math.sin(x/W*Math.PI*8+lt*0.038)*(S.playing?20:7);x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.strokeStyle=c+(S.playing?'88':'44');ctx.lineWidth=2;ctx.shadowBlur=9;ctx.shadowColor=c;ctx.stroke();ctx.shadowBlur=0;for(let p=0;p<13;p++){const px=((Math.sin(lt*0.0065+p*2.24)*0.5+0.5)*W);const py=((Math.cos(lt*0.009+p*1.8)*0.5+0.5)*H);ctx.beginPath();ctx.arc(px,py,1.5+Math.sin(lt*0.04+p),0,Math.PI*2);ctx.fillStyle=c+(S.playing?'cc':'44');ctx.fill();}lt++;requestAnimationFrame(draw);}
+  draw();
+})();
+
+/* THIRD EYE */
+(function(){
+  const cv=document.getElementById('eye-cv');if(!cv) return;
+  const ctx=cv.getContext('2d');const W=cv.width,H=cv.height,cx=W/2,cy=H/2;let t=0;
+  function draw(){
+    ctx.clearRect(0,0,W,H);const p=S.eyePct/100;
+    const bg=ctx.createRadialGradient(cx,cy,0,cx,cy,145);bg.addColorStop(0,`rgba(20,10,50,${0.3+p*0.5})`);bg.addColorStop(1,'rgba(1,3,6,0)');ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+    const rc=['#7c4dff','#9c6dff','#c4a8ff','#7c4dff','#4a3ab8'];
+    [130,104,78,54,32,16].forEach((r,i)=>{const a=(0.15+p*0.45)*(Math.sin(t*0.03+i)*0.5+0.5)+0.08;ctx.beginPath();ctx.arc(cx,cy,r*(1+Math.sin(t*0.02+i)*0.06),0,Math.PI*2);ctx.strokeStyle=rc[i%rc.length]+Math.floor(Math.min(a,0.7)*255).toString(16).padStart(2,'0');ctx.lineWidth=0.8+(p*0.8);ctx.stroke();});
+    if(p>0.1){const tri=t*0.008;[[0,1,2],[1,2,0]].forEach((pts,pi)=>{ctx.beginPath();pts.forEach((pp,ii)=>{const ang=tri+pp*(Math.PI*2/3)+(pi===0?0:Math.PI/3);const rr=58+p*18;const px=cx+Math.cos(ang)*rr,py=cy+Math.sin(ang)*rr;ii===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.closePath();ctx.strokeStyle=`rgba(124,77,255,${p*0.5})`;ctx.lineWidth=0.8;ctx.stroke();});}
+    for(let pp=0;pp<(S.eyeActive?12:6);pp++){const ang=(Math.PI*2/(S.eyeActive?12:6))*pp+t*(S.eyeActive?0.006:0.002);ctx.save();ctx.translate(cx,cy);ctx.rotate(ang);ctx.beginPath();ctx.ellipse(0,-(35+p*18)/2,7,35+p*18,0,0,Math.PI*2);ctx.fillStyle=`rgba(124,77,255,${0.06+p*0.18+Math.sin(t*0.04+pp)*0.04})`;ctx.fill();ctx.strokeStyle=`rgba(196,168,255,${0.18+p*0.28})`;ctx.lineWidth=0.5;ctx.stroke();ctx.restore();}
+    const ew=52+p*22,eh=20+p*10;ctx.save();ctx.translate(cx,cy);ctx.beginPath();ctx.moveTo(-ew,0);ctx.quadraticCurveTo(0,-eh,ew,0);ctx.quadraticCurveTo(0,eh,-ew,0);ctx.closePath();ctx.strokeStyle=`rgba(196,168,255,${0.4+p*0.5})`;ctx.lineWidth=1.5+(p*1.5);ctx.shadowBlur=S.eyeActive?18:7;ctx.shadowColor='rgba(124,77,255,0.8)';ctx.stroke();ctx.shadowBlur=0;
+    const ig=ctx.createRadialGradient(0,0,0,0,0,(13+p*9)*1.5);ig.addColorStop(0,`rgba(196,168,255,${0.8+p*0.2})`);ig.addColorStop(0.4,`rgba(124,77,255,${0.6+p*0.3})`);ig.addColorStop(1,'rgba(74,58,184,0)');ctx.fillStyle=ig;ctx.beginPath();ctx.arc(0,0,(13+p*9)*1.5,0,Math.PI*2);ctx.fill();
+    ctx.beginPath();ctx.arc(0,0,4+p*2,0,Math.PI*2);ctx.fillStyle='rgba(1,3,6,0.92)';ctx.fill();
+    if(S.eyeActive){ctx.beginPath();ctx.arc(0,0,2,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${0.6+Math.sin(t*0.08)*0.3})`;ctx.fill();}
+    ctx.restore();
+    if(S.eyeActive&&p>0.3){for(let r=0;r<8;r++){const ang=(Math.PI*2/8)*r+t*0.012;const len=28+p*48+Math.sin(t*0.04+r)*8;ctx.save();ctx.translate(cx,cy);ctx.rotate(ang);ctx.beginPath();ctx.moveTo(0,17+p*7);ctx.lineTo(0,17+p*7+len);const rg=ctx.createLinearGradient(0,17,0,17+p*7+len);rg.addColorStop(0,`rgba(196,168,255,${0.4*p})`);rg.addColorStop(1,'rgba(124,77,255,0)');ctx.strokeStyle=rg;ctx.lineWidth=1.2;ctx.stroke();ctx.restore();}}
+    t++;requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* OPT SCORE RING */
+function drawOptScore(score){
+  const cv=document.getElementById('oscore-cv');if(!cv) return;
+  const ctx=cv.getContext('2d');ctx.clearRect(0,0,56,56);
+  ctx.beginPath();ctx.arc(28,28,22,0,Math.PI*2);ctx.strokeStyle='rgba(124,77,255,0.15)';ctx.lineWidth=4;ctx.stroke();
+  if(score>0){const g=ctx.createLinearGradient(0,0,56,56);g.addColorStop(0,'#7c4dff');g.addColorStop(1,'#c4a8ff');ctx.beginPath();ctx.arc(28,28,22,-Math.PI/2,-Math.PI/2+(score/100)*Math.PI*2);ctx.strokeStyle=g;ctx.lineWidth=4;ctx.shadowBlur=10;ctx.shadowColor='rgba(124,77,255,0.6)';ctx.stroke();ctx.shadowBlur=0;}
+  document.getElementById('opsrv').textContent=score;document.getElementById('ftcon').textContent=score+'%';
+}
+
+/* ═══════════════════════════
+   UI BUILDERS
+═══════════════════════════ */
+function buildFreqLib(){
+  document.getElementById('flg').innerHTML=FREQUENCIES.map((f,i)=>`
+    <div class="fcard${i===S.freqIdx?' active':''}" id="fc${i}" onclick="selectFreq(${i})">
+      <div class="fcn">${f.name}</div>
+      <div class="fch" style="color:${f.color}">${f.hz}<small style="font-size:0.48rem;color:var(--text-lo)"> Hz</small></div>
+      <div class="fcd">${f.desc}</div>
+      <div class="fcb" style="background:${f.color}"></div>
+    </div>`).join('');
+}
+
+function buildChakras(){
+  document.getElementById('chl').innerHTML=CHAKRAS.map((c,i)=>`
+    <div class="chr${i===S.activeChakra?' active':''}" id="ch${i}" onclick="selectChakra(${i})">
+      <div class="chg" style="color:${c.color}">${c.glyph}</div>
+      <div class="cho" style="background:radial-gradient(circle,${c.color}88,${c.color}18);box-shadow:0 0 7px ${c.color}40;animation-delay:${i*0.38}s"></div>
+      <div class="chn">${c.name}</div><div class="chz">${c.hz} Hz</div>
+    </div>`).join('');
+}
+
+function buildBwaves(){
+  document.getElementById('bwl').innerHTML=BWAVES.map((b,i)=>`
+    <div class="bwr">
+      <div class="bwn" style="color:${b.color}">${b.name}</div>
+      <div class="bwb"><div class="bwf" id="bwf${i}" style="width:${(S.bwAmps[i]*100).toFixed(0)}%;background:${b.color}"></div></div>
+      <div class="bwrng">${b.range}</div>
+    </div>`).join('');
+}
+
+function buildProtos(){
+  const ps=[{name:'Morning Activation',desc:'432 Hz + Beta · 15 min energizing'},{name:'Stress Release',desc:'396 Hz + Theta · 20 min reset'},{name:'DNA Repair',desc:'528 Hz + Alpha · 30 min healing'},{name:'Third Eye Opening',desc:'852 Hz + Gamma · 25 min Ajna'},{name:'Deep Sleep Prep',desc:'174 Hz + Delta · 45 min wind-down'},{name:'Crown Illumination',desc:'963 Hz + Theta · 30 min unity'}];
+  document.getElementById('prb').innerHTML=ps.map(p=>`<div class="prc" onclick="applyP('${p.name.replace(/'/g,"\\'")}','${p.desc.replace(/'/g,"\\'")}')"><div class="prn">${p.name}</div><div class="prd">${p.desc}</div></div>`).join('');
+}
+
+function buildLSO(){
+  document.getElementById('lsg').innerHTML=LSO_PROGS.map((p,i)=>`<div class="lsc${i===S.lsoIdx?' active':''}" id="lc${i}" onclick="selectLSO(${i})"><div class="lsi">${p.icon}</div><div class="lsn">${p.name}</div><div class="lsr" style="color:${p.color}">${p.range}</div><div class="lsb">${p.benefit}</div></div>`).join('');
+  const items=[{l:'Visual',c:'var(--lso)',v:68},{l:'Auditory',c:'var(--aqua)',v:82},{l:'Neural',c:'var(--violet)',v:58},{l:'Cardiac',c:'var(--rose)',v:74},{l:'Cellular',c:'var(--amber)',v:45}];
+  document.getElementById('lsoe').innerHTML=items.map(e=>`<div class="enr"><div class="enl">${e.l}</div><div class="entr"><div class="enfi" style="width:${e.v}%;background:${e.c}"></div></div><div class="enp">${e.v}%</div></div>`).join('');
+  document.getElementById('lsob').innerHTML=[{k:'Mitochondrial',v:'↑ ATP synthesis via red light'},{k:'Circadian',v:'Resets sleep-wake rhythm'},{k:'Serotonin',v:'Warm spectrum elevates mood'},{k:'Neuroplast.',v:'Combined stimuli rewire cortex'},{k:'Anti-inflam.',v:'Red 630–850 nm reduces cytokines'}].map(b=>`<div style="display:flex;gap:9px;padding:6px 0;border-bottom:1px solid var(--rim);align-items:flex-start;"><span style="font-family:'DM Mono',monospace;font-size:0.5rem;color:var(--lso);width:76px;flex-shrink:0;padding-top:2px;">${b.k}</span><span style="font-size:0.72rem;color:var(--text-dim);font-style:italic;line-height:1.5;">${b.v}</span></div>`).join('');
+  updateLSOProt();
+}
+
+function updateLSOProt(){
+  const p=LSO_PROGS[S.lsoIdx],f=FREQUENCIES[S.freqIdx];
+  document.getElementById('lsop').innerHTML=`<p style="font-family:'Spectral',serif;font-size:0.79rem;font-style:italic;color:var(--text);line-height:1.68;"><strong style="font-style:normal;color:${p?.color}">${p?.name}</strong> (${p?.range}) + <strong style="font-style:normal;color:var(--gold)">${f?.hz||432} Hz</strong>. Optimal: 20–40 min.</p>${['0–5 min: Grounding','5–20 min: Active entrainment','20–35 min: Deep integration','35–40 min: Emergence'].map(s=>`<div style="display:flex;gap:7px;align-items:center;"><div style="width:4px;height:4px;border-radius:50%;background:var(--lso);flex-shrink:0;"></div><span style="font-family:'DM Mono',monospace;font-size:0.54rem;color:var(--text-dim);">${s}</span></div>`).join('')}`;
+}
+
+function buildStages(){
+  document.getElementById('stgb').innerHTML=EYE_STAGES.map((s,i)=>{const done=i<S.eyeStage;const curr=i===S.eyeStage&&S.eyeActive;return`<div class="stgr${done?' done':''}${curr?' current':''}" id="stg${i}"><div class="stgnum">${i+1}</div><div class="stgnm">${s.name}</div><div class="stgst">${done?'✦ Complete':curr?'● Active':'○ Awaiting'}</div></div>`;}).join('');
+}
+
+function buildConsMeter(){
+  document.getElementById('cmb2').innerHTML=[{l:'Clarity',id:'cmc',c:'var(--aqua)'},{l:'Openness',id:'cmo',c:'var(--violet)'},{l:'Presence',id:'cmp',c:'var(--green)'},{l:'Expansion',id:'cme',c:'var(--oracle)'},{l:'Unity',id:'cmu',c:'var(--gold)'}].map(e=>`<div class="cmr"><div class="cml">${e.l}</div><div class="cmtr"><div class="cmfl" id="${e.id}" style="width:0%;background:${e.c}"></div></div><div class="cmv" id="${e.id}v">0%</div></div>`).join('');
+}
+
+function buildEntrain(){
+  document.getElementById('enb').innerHTML=[{l:'Body',c:'var(--green)'},{l:'Mind',c:'var(--aqua)'},{l:'Heart',c:'var(--rose)'},{l:'Spirit',c:'var(--violet)'}].map((e,i)=>`<div class="enr"><div class="enl">${e.l}</div><div class="entr"><div class="enfi" id="ef${i}" style="width:0%;background:${e.c}"></div></div><div class="enp" id="ep${i}">0%</div></div>`).join('');
+}
+
+function buildRpt(){
+  document.getElementById('rptb').innerHTML=[{k:'Duration',id:'rpd',v:'—'},{k:'Breath cycles',id:'rpc',v:'0'},{k:'HRV estimate',id:'rph',v:'—'},{k:'Coherence',id:'rpco',v:'—'}].map(r=>`<div style="display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--rim);"><span style="font-family:'DM Mono',monospace;font-size:0.52rem;letter-spacing:0.09em;color:var(--text-dim);text-transform:uppercase;">${r.k}</span><span id="${r.id}" style="font-family:'Spectral',serif;font-size:0.86rem;color:var(--text-hi);">${r.v}</span></div>`).join('');
+}
+
+function buildBreathGuide(){
+  const bp=BPATS[S.breathKey];
+  document.getElementById('gtxt').textContent=bp.guidance;
+  document.getElementById('bfl').innerHTML=bp.benefits.map(b=>`<div class="bfi"><div class="bfd"></div><div class="bft">${b}</div></div>`).join('');
+}
+
+function updateCtx(){
+  const f=FREQUENCIES[S.freqIdx];const el=document.getElementById('ctxb');if(!el) return;
+  el.innerHTML=[{k:'Frequency',v:`${f?.name||'—'} · ${f?.hz||'—'} Hz`},{k:'Binaural',v:`${getBeatHz()} Hz`},{k:'Mode',v:cap(S.mode)},{k:'Breath',v:S.breathKey},{k:'Chakra',v:CHAKRAS[S.activeChakra]?.name||'—'},{k:'Duration',v:fmtTime(S.sessionSec)},{k:'Third Eye',v:S.eyeActive?`${S.eyePct}%`:'Inactive'},{k:'LSO',v:LSO_PROGS[S.lsoIdx]?.name||'—'}].map(c=>`<div class="ctxi"><span class="ctxk">${c.k}</span><span class="ctxv">${c.v}</span></div>`).join('');
+}
+
+function updateStats(){
+  const fav=getFav();
+  document.getElementById('stb').innerHTML=[{k:'Total Sessions',v:S.totalSess},{k:'Total Practice',v:fmtMins(S.totalMins)},{k:'Journal Entries',v:S.jnl.length},{k:'Fav. Frequency',v:fav}].map(r=>`<div class="str"><span class="stk">${r.k}</span><span class="stv">${r.v}</span></div>`).join('');
+  const counts={};S.fhist.forEach(n=>{counts[n]=(counts[n]||0)+1;});
+  const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,7);
+  document.getElementById('fhb').innerHTML=sorted.length?sorted.map(([nm,ct])=>`<div class="fhr"><span class="fhm">${nm}</span><span class="fhc">${ct}×</span></div>`).join(''):'<span style="font-size:0.72rem;color:var(--text-lo);font-style:italic;">No history yet.</span>';
+}
+
+function renderEntries(){
+  const el=document.getElementById('el');if(!el) return;
+  if(!S.jnl.length){el.innerHTML='<span style="font-size:0.76rem;color:var(--text-lo);font-style:italic;padding:5px 0;display:block;">No entries yet.</span>';return;}
+  el.innerHTML=S.jnl.map(e=>`<div class="entr"><div class="em"><span>${e.date} ${e.time}</span><span>·</span><span>${e.freq}</span><span>·</span><span>${e.mode}</span>${e.sec>0?`<span>· ${fmtTime(e.sec)}</span>`:''}</div><div class="et">${escH(e.text)}</div></div>`).join('');
+}
+
+function updateJMeta(){
+  const f=FREQUENCIES[S.freqIdx];
+  const jf=document.getElementById('jtf'),jt=document.getElementById('jtt'),jm=document.getElementById('jtm');
+  if(jf) jf.textContent=f?`${f.name} ${f.hz}Hz`:'No Freq';
+  if(jt) jt.textContent=fmtTime(S.sessionSec);
+  if(jm) jm.textContent=S.mode;
+}
+
+function updateCons(){
+  const base=S.eyeActive?(S.eyePct/100):0;
+  const sess=Math.min(S.sessionSec/1200,1);
+  const hrv=S.hrv.length>5?(S.hrv.reduce((a,b)=>a+b,0)/S.hrv.length-38)/66:0;
+  const items=[
+    {id:'cmc',v:Math.min(100,Math.round(sess*40+hrv*30+base*30))},
+    {id:'cmo',v:Math.min(100,Math.round(base*50+sess*30+S.bwAmps[1]*20*100))},
+    {id:'cmp',v:Math.min(100,Math.round(S.bCycles*3+sess*35+hrv*30))},
+    {id:'cme',v:Math.min(100,Math.round(base*60+sess*20+hrv*20))},
+    {id:'cmu',v:Math.min(100,Math.round(base*40+sess*25+hrv*20+S.bwAmps[1]*15*100))},
+  ];
+  items.forEach(({id,v})=>{const f=document.getElementById(id),fv=document.getElementById(id+'v');if(f) f.style.width=v+'%';if(fv) fv.textContent=v+'%';});
+  const avg=Math.round(items.reduce((a,b)=>a+b.v,0)/items.length);
+  S.optScore=avg;drawOptScore(avg);
+  const desc=['Begin your session to start optimizing','Building baseline resonance…','Frequency entrainment taking hold','Deep coherence forming — excellent','You are in a profound healing state','Transcendent alignment achieved ✦'];
+  const de=document.getElementById('opsd');if(de) de.textContent=desc[Math.min(Math.floor(avg/20),5)];
+}
+
+/* ═══════════════════════════
+   INTERACTIONS
+═══════════════════════════ */
+function togglePlay(){
+  S.playing=!S.playing;
+  const btn=document.getElementById('play-btn'),dot=document.getElementById('sdot'),sp=document.getElementById('spill');
+  if(S.playing){
+    btn.textContent='⏸  PAUSE SESSION';btn.classList.add('playing');
+    dot.style.background='var(--gold)';sp.classList.add('active');
+    document.getElementById('stxt').textContent='ACTIVE';
+    if(actx?.state==='suspended') actx.resume();
+    audioStart();S.totalSess++;
+    localStorage.setItem('soma5_s',S.totalSess);
+    document.getElementById('ftsess').textContent=S.totalSess;
+    toast('✦ Session commenced');
+  }else{
+    btn.textContent='▶  BEGIN SESSION';btn.classList.remove('playing');
+    dot.style.background='var(--green)';sp.classList.remove('active');
+    document.getElementById('stxt').textContent='PAUSED';
+    audioStop();toast('◆ Session paused');
+  }
+}
+
+function selectFreq(i){
+  S.freqIdx=i;
+  document.querySelectorAll('.fcard').forEach((el,j)=>el.classList.toggle('active',j===i));
+  const f=FREQUENCIES[i];
+  document.getElementById('dbase').textContent=f.hz;
+  document.getElementById('dbeat').textContent=getBeatHz();
+  document.getElementById('ftfreq').textContent=f.name;
+  if(S.playing) audioStart();
+  S.fhist.push(f.name);if(S.fhist.length>120) S.fhist.shift();
+  localStorage.setItem('soma5_fh',JSON.stringify(S.fhist));
+  updateCtx();updateLSOProt();toast(`✦ ${f.name} · ${f.hz} Hz`);
+}
+
+function selectChakra(i){
+  S.activeChakra=i;
+  document.querySelectorAll('.chr').forEach((el,j)=>el.classList.toggle('active',j===i));
+  const fIdx=FREQUENCIES.findIndex(f=>f.hz===CHAKRAS[i].hz);
+  if(fIdx>=0) selectFreq(fIdx);
+}
+
+function setMode(btn,mode){
+  S.mode=mode;
+  document.querySelectorAll('#mgrid .btn-sm').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('dbeat').textContent=getBeatHz();
+  document.getElementById('dstate').textContent=getBrainState();
+  if(S.playing) audioStart();updateCtx();toast(`Mode: ${cap(mode)}`);
+}
+
+function setVol(el){S.volume=el.value/100;document.getElementById('vvol').textContent=el.value+'%';if(masterGain&&actx) masterGain.gain.setTargetAtTime(S.volume*0.26,actx.currentTime,0.02);}
+function setBin(el){S.binInt=el.value/100;document.getElementById('vbin').textContent=el.value+'%';if(S.playing) audioStart();}
+function setHarm(el){S.harmDepth=el.value/100;document.getElementById('vharm').textContent=el.value+'%';}
+function setBreath(btn,key){S.breathKey=key;document.querySelectorAll('.bpb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');buildBreathGuide();updateCtx();toast(`Breathwork: ${key}`);}
+function setCM(btn,mode){S.claudeMode=mode;document.querySelectorAll('.cmb').forEach(b=>b.classList.remove('active'));btn.classList.add('active');}
+function selectLSO(i){S.lsoIdx=i;document.querySelectorAll('.lsc').forEach((el,j)=>el.classList.toggle('active',j===i));updateLSOProt();const p=LSO_PROGS[i];document.getElementById('lsod').textContent=`${p.name} (${p.range}) — ${p.benefit}. Synchronized with ${FREQUENCIES[S.freqIdx]?.hz||432} Hz.`;toast(`◈ ${p.name} activated`);}
+
+function switchTab(tab,btn){
+  S.currentTab=tab;
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-page').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('pg-'+tab).classList.add('active');
+  if(tab==='journal'){updateJMeta();updateStats();}
+  if(tab==='claude'){updateCtx();}
+  if(tab==='lso'){updateLSOProt();}
+  if(tab==='oracle'){buildStages();}
+  if(tab==='tones'){
+    setTimeout(()=>{TONE_DATA.forEach((_,i)=>{if(!toneNodes[i]) stopScopeAnim(i);});},80);
+  }
+}
+
+/* ═══════════════════════════
+   THIRD EYE
+═══════════════════════════ */
+let eyeIv=null;
+function activateEye(){
+  selectFreq(5);if(!S.playing) togglePlay();
+  S.eyeActive=true;S.eyePct=0;S.eyeStage=0;buildStages();
+  const btn=document.getElementById('eyebtn');if(btn){btn.textContent='● Activating…';}
+  toast('👁 Third Eye Activation initiated','to');
+  clearInterval(eyeIv);
+  eyeIv=setInterval(()=>{
+    if(!S.eyeActive) return;
+    S.eyePct=Math.min(100,S.eyePct+0.25);
+    document.getElementById('epct').textContent=Math.round(S.eyePct);
+    const si=Math.floor(S.eyePct/(100/EYE_STAGES.length));
+    if(si!==S.eyeStage&&si<EYE_STAGES.length){S.eyeStage=si;buildStages();document.getElementById('estg').textContent=EYE_STAGES[si].name;toast(`👁 Stage ${si+1}: ${EYE_STAGES[si].name}`,'to');}
+    if(S.eyePct>=100){clearInterval(eyeIv);document.getElementById('estg').textContent='Illuminated';const b=document.getElementById('eyebtn');if(b) b.textContent='✦ Activated';toast('✦ Third Eye illuminated','to');}
+  },500);
+}
+
+function resetEye(){
+  clearInterval(eyeIv);S.eyeActive=false;S.eyePct=0;S.eyeStage=0;
+  document.getElementById('epct').textContent='0';
+  document.getElementById('estg').textContent='Dormant';
+  const b=document.getElementById('eyebtn');if(b) b.textContent='⊕ Activate';
+  buildStages();toast('Third Eye reset');
+}
+
+/* ═══════════════════════════
+   ORACLE SCAN
+═══════════════════════════ */
+async function runScan(){
+  const btn=document.getElementById('scanbtn'),fill=document.getElementById('sbf'),stat=document.getElementById('sbst'),feed=document.getElementById('tfeed');
+  btn.disabled=true;stat.textContent='Initializing Oracle scan…';stat.classList.add('active');fill.style.width='5%';
+  feed.innerHTML='<div style="font-family:\'DM Mono\',monospace;font-size:0.56rem;color:var(--oracle);letter-spacing:0.1em;padding:5px 0;">Scanning consciousness field…</div>';
+  const aiv=setInterval(()=>{const c=parseFloat(fill.style.width)||5;if(c<84) fill.style.width=Math.min(c+Math.random()*3.5,84)+'%';},400);
+  const f=FREQUENCIES[S.freqIdx];const today=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  const prompt=`You are Claude performing a live Oracle Intelligence Scan for SOMA ∞ healing system. Today is ${today}. Use web_search to find CURRENT trending information across these domains:
+1. Search: "spiritual awakening consciousness 2025 trending"
+2. Search: "healing frequency binaural beats research 2025"
+3. Search: "third eye pineal gland activation trending practices 2025"
+4. Search: "meditation trends popular techniques 2025"
+After searching, respond ONLY with valid JSON (no markdown):
+{"scanTime":"${today}","consciousness_score":<1-100>,"global_pulse":"<one sentence on collective consciousness>","trends":[{"title":"<title>","category":"<Awakening|Frequency|ThirdEye|Meditation|Research>","summary":"<2 specific sentences>","momentum":"<Rising|Viral|Established|Emerging>","tags":["<t1>","<t2>","<t3>"],"protocol_enhancement":"<specific actionable advice for ${f?.hz||432}Hz ${S.mode} mode session>"}],"optimization":{"recommended_frequency":"<Hz>","session_insight":"<2-3 sentences based on scan data>","third_eye_tip":"<specific tip>","trending_affirmation":"<short powerful affirmation>"}}
+Include at least 5 trends. Be specific — reference what you actually found.`;
+  try{
+    stat.textContent='Searching consciousness field…';fill.style.width='20%';
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:3000,tools:[{"type":"web_search_20250305","name":"web_search"}],messages:[{role:'user',content:prompt}]})});
+    clearInterval(aiv);
+    if(!resp.ok){const e=await resp.json().catch(()=>({}));throw new Error(e?.error?.message||`HTTP ${resp.status}`);}
+    const data=await resp.json();fill.style.width='90%';stat.textContent='Processing intelligence data…';
+    let rawText='';
+    if(data.content&&Array.isArray(data.content)) rawText=data.content.filter(b=>b.type==='text').map(b=>b.text).join('\n');
+    const match=rawText.match(/\{[\s\S]*\}/);if(!match) throw new Error('No JSON in response');
+    const parsed=JSON.parse(match[0]);
+    fill.style.width='100%';stat.textContent=`✦ Scan complete · ${parsed.trends?.length||0} signals · Score: ${parsed.consciousness_score||'—'}`;
+    S.oracleDone=true;S.oTrends=parsed.trends||[];
+    renderTrends(parsed);renderOpt(parsed);renderInsights(parsed);
+    toast(`✦ Oracle: ${parsed.trends?.length} trends found`,'to');
+  }catch(e){
+    clearInterval(aiv);fill.style.width='0%';stat.textContent='⚠ '+e.message;stat.classList.remove('active');
+    feed.innerHTML=`<div style="font-family:'Spectral',serif;font-size:0.78rem;color:var(--rose);font-style:italic;padding:7px 0;">Scan error: ${escH(e.message)}. Ensure Claude API access is available.</div>`;
+  }
+  btn.disabled=false;stat.classList.remove('active');
+}
+
+function renderTrends(data){
+  const feed=document.getElementById('tfeed');if(!feed) return;
+  feed.innerHTML='';
+  if(data.global_pulse){const gp=document.createElement('div');gp.style.cssText='padding:9px 11px;border:1px solid rgba(124,77,255,0.3);border-radius:var(--r);background:rgba(124,77,255,0.06);margin-bottom:5px;animation:ti 0.4s ease';gp.innerHTML=`<div style="font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.16em;color:var(--oracle);text-transform:uppercase;margin-bottom:3px;">Global Pulse · ${data.scanTime||'Live'} · Score: ${data.consciousness_score}/100</div><div style="font-family:'Spectral',serif;font-size:0.8rem;color:var(--oracle-pale);font-style:italic;line-height:1.55;">${escH(data.global_pulse)}</div>`;feed.appendChild(gp);}
+  (data.trends||[]).forEach((t,i)=>{const card=document.createElement('div');card.className='tcard';card.style.animationDelay=`${i*0.07}s`;const mc={Rising:'var(--green)',Viral:'var(--rose)',Established:'var(--aqua)',Emerging:'var(--amber)'}[t.momentum]||'var(--text-dim)';card.innerHTML=`<div class="thdr"><div class="tttl">${escH(t.title||'')}</div><div class="tbdg" style="color:${mc};border-color:${mc}44">${t.momentum||'—'}</div></div><div style="font-family:'DM Mono',monospace;font-size:0.48rem;letter-spacing:0.1em;color:var(--oracle-dim);text-transform:uppercase;margin-bottom:3px;">${t.category||''}</div><div class="tbody">${escH(t.summary||'')}</div>${t.protocol_enhancement?`<div style="margin-top:5px;padding:4px 7px;border-left:1px solid var(--oracle-dim);font-size:0.68rem;color:var(--text-dim);font-style:italic;line-height:1.5;">→ ${escH(t.protocol_enhancement)}</div>`:''}<div class="ttags">${(t.tags||[]).map(tg=>`<span class="ttag">${escH(tg)}</span>`).join('')}</div>`;feed.appendChild(card);});
+}
+
+function renderOpt(data){
+  const opt=data.optimization||{};const el=document.getElementById('oprecs');if(!el) return;
+  el.innerHTML=[{l:'Session Insight',t:opt.session_insight},{l:'Third Eye Tip',t:opt.third_eye_tip},{l:'Affirmation',t:opt.trending_affirmation}].filter(i=>i.t).map(r=>`<div class="oprc"><div class="oprl">${r.l}</div><div class="oprt">${escH(r.t)}</div></div>`).join('');
+  drawOptScore(data.consciousness_score||0);
+}
+
+function renderInsights(data){
+  const el=document.getElementById('tinsi');if(!el) return;
+  el.innerHTML=(data.trends||[]).slice(0,5).map(t=>`<div style="padding:6px 0;border-bottom:1px solid var(--rim);"><div style="font-family:'Cinzel',serif;font-size:0.6rem;font-weight:600;letter-spacing:0.07em;color:var(--oracle-pale);margin-bottom:2px;">${escH(t.title||'')}</div><div style="font-size:0.7rem;color:var(--text-dim);font-style:italic;line-height:1.42;">${escH((t.summary||'').slice(0,88))}…</div></div>`).join('');
+}
+
+/* ═══════════════════════════
+   CLAUDE CHAT
+═══════════════════════════ */
+function qps(btn){const ta=document.getElementById('cta');if(ta){ta.value=btn.textContent;sendC();}}
+function applyP(name,desc){const ta=document.getElementById('cta');if(ta){ta.value=`Guide me through the "${name}" protocol step by step.`;sendC();}switchTab('claude',document.querySelector('.t-claude'));}
+
+async function sendC(){
+  const ta=document.getElementById('cta'),btn=document.getElementById('sndb'),err=document.getElementById('apie');
+  const text=ta?.value?.trim();if(!text||btn?.disabled) return;
+  ta.value='';btn.disabled=true;err?.classList.remove('show');addCMsg('user',text);
+  const tid='tp-'+Date.now();const msgs=document.getElementById('cmsgs');
+  const te=document.createElement('div');te.id=tid;te.className='msg assistant';
+  te.innerHTML=`<div class="mav">✦</div><div class="mbu"><div class="tyw"><div class="tyd"></div><div class="tyd"></div><div class="tyd"></div></div></div>`;
+  msgs?.appendChild(te);msgs?.scrollTo({top:msgs.scrollHeight,behavior:'smooth'});
+  const f=FREQUENCIES[S.freqIdx];
+  const modeDesc={guide:'Provide wise compassionate guidance',prescribe:'Give specific actionable prescriptions',reflect:'Help the user reflect with introspective questions'}[S.claudeMode]||'Guide';
+  const tCtx=S.oracleDone?`\nOracle scan found: ${S.oTrends.slice(0,3).map(t=>t.title).join(', ')}. Score: ${S.optScore}/100.`:'';
+  const sys=`You are Claude — AI healing guide for SOMA ∞ with Oracle Intelligence. Deep expertise in sound healing, binaural beats, solfeggio, meditation, chakra work, breathwork, brainwave entrainment, HRV, and consciousness expansion.
+Current session: ${f?.name||'—'} at ${f?.hz||'—'} Hz · Binaural: ${getBeatHz()} Hz · Mode: ${S.mode} · Breath: ${S.breathKey} · Chakra: ${CHAKRAS[S.activeChakra]?.name||'—'} · Third Eye: ${S.eyeActive?S.eyePct+'% active':'inactive'} · Duration: ${fmtTime(S.sessionSec)}${tCtx}
+Mode: ${modeDesc}. Be specific, warm, reference the user's exact session. 2–4 paragraphs max.`;
+  try{
+    const resp=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:[...S.claudeHistory.slice(-18),{role:'user',content:text}]})});
+    document.getElementById(tid)?.remove();
+    if(!resp.ok){const e=await resp.json().catch(()=>({}));throw new Error(e?.error?.message||`HTTP ${resp.status}`);}
+    const data=await resp.json();const reply=data?.content?.[0]?.text;
+    if(!reply) throw new Error('Empty response');
+    S.claudeHistory.push({role:'user',content:text},{role:'assistant',content:reply});
+    if(S.claudeHistory.length>24) S.claudeHistory=S.claudeHistory.slice(-24);
+    addCMsg('assistant',reply);toast('✦ Claude responded','tc');
+  }catch(e){
+    document.getElementById(tid)?.remove();err?.classList.add('show');
+    addCMsg('assistant',`Unable to reach the oracle right now. ${e.message?`(${e.message})`:''}. Please check your connection.`);
+  }
+  btn.disabled=false;
+}
+
+function addCMsg(role,text){
+  const msgs=document.getElementById('cmsgs');if(!msgs) return;
+  const el=document.createElement('div');el.className='msg '+role;
+  const now=new Date().toLocaleTimeString('en',{hour:'2-digit',minute:'2-digit'});
+  const fmt=escH(text).replace(/\n\n/g,'</p><p style="margin-top:7px">').replace(/\n/g,'<br>');
+  el.innerHTML=`<div class="mav">${role==='assistant'?'✦':'◎'}</div><div class="mbu"><p>${fmt}</p><span class="mt">${now}</span></div>`;
+  msgs.appendChild(el);msgs.scrollTo({top:msgs.scrollHeight,behavior:'smooth'});
+}
+
+/* ═══════════════════════════
+   JOURNAL
+═══════════════════════════ */
+function saveJ(){
+  const ta=document.getElementById('jta');const text=ta?.value?.trim();
+  if(!text){toast('Write something first.','ter');return;}
+  const f=FREQUENCIES[S.freqIdx];
+  S.jnl.unshift({text,date:new Date().toLocaleDateString(),time:new Date().toLocaleTimeString('en',{hour:'2-digit',minute:'2-digit'}),freq:f?`${f.name} ${f.hz}Hz`:'—',mode:S.mode,sec:S.sessionSec});
+  if(S.jnl.length>40) S.jnl.pop();
+  localStorage.setItem('soma5_j',JSON.stringify(S.jnl));
+  ta.value='';renderEntries();updateStats();toast('✦ Entry recorded');
+}
+
+function exportJ(){
+  if(!S.jnl.length){toast('No entries to export.','ter');return;}
+  const body=S.jnl.map(e=>`[${e.date} ${e.time}]\n${e.freq} | ${e.mode} | ${fmtTime(e.sec)}\n\n${e.text}`).join('\n\n'+'—'.repeat(38)+'\n\n');
+  const a=Object.assign(document.createElement('a'),{href:URL.createObjectURL(new Blob([`SOMA ∞ Journal Export\n${new Date().toLocaleString()}\n${'═'.repeat(50)}\n\n`+body],{type:'text/plain;charset=utf-8'})),download:`SOMA-journal-${new Date().toISOString().slice(0,10)}.txt`});
+  a.click();URL.revokeObjectURL(a.href);toast('↓ Journal exported');
+}
+
+function clearJ(){
+  if(!S.jnl.length) return;
+  if(!confirm(`Clear all ${S.jnl.length} entries?`)) return;
+  S.jnl=[];localStorage.setItem('soma5_j','[]');renderEntries();updateStats();toast('Journal cleared');
+}
+
+/* ═══════════════════════════
+   INTERVALS
+═══════════════════════════ */
+setInterval(()=>{
+  if(!S.playing) return;
+  S.sessionSec++;
+  document.getElementById('hdr-clock').textContent=fmtTime(S.sessionSec);
+  document.getElementById('sfill').style.width=Math.min(S.sessionSec/3600*100,100)+'%';
+  if(S.sessionSec%60===0){S.totalMins++;localStorage.setItem('soma5_m',S.totalMins);document.getElementById('fttime').textContent=fmtMins(S.totalMins);}
+  const rd=document.getElementById('rpd');if(rd) rd.textContent=fmtTime(S.sessionSec);
+  const rc=document.getElementById('rpc');if(rc) rc.textContent=S.bCycles;
+  updateJMeta();if(S.sessionSec%5===0) updateCons();
+  if(S.currentTab==='claude'&&S.sessionSec%10===0) updateCtx();
+},1000);
+
+setInterval(()=>{
+  const tgt={healing:[0.14,0.72,0.42,0.17,0.05],meditation:[0.22,0.62,0.54,0.12,0.04],sleep:[0.76,0.48,0.20,0.05,0.02],focus:[0.04,0.16,0.30,0.72,0.24]}[S.mode]||[0.14,0.72,0.42,0.17,0.05];
+  const eb=S.eyeActive?[0,0,0.1,0.15,0.3]:BWAVES.map(()=>0);
+  tgt.forEach((t,i)=>{S.bwAmps[i]+=(t+eb[i]+(Math.random()-0.5)*0.06-S.bwAmps[i])*0.14;S.bwAmps[i]=Math.max(0.02,Math.min(1,S.bwAmps[i]));const el=document.getElementById('bwf'+i);if(el) el.style.width=(S.bwAmps[i]*100).toFixed(1)+'%';});
+  if(S.playing){const a=S.bwAmps;[[a[2]*100,0],[a[1]*100,1],[(a[2]+a[1])/2*100,2],[a[1]*78,3]].forEach(([v,i])=>{const ef=document.getElementById('ef'+i),ep=document.getElementById('ep'+i);if(ef) ef.style.width=v.toFixed(0)+'%';if(ep) ep.textContent=v.toFixed(0)+'%';});}
+},380);
+
+let _bph=0,_bcd=BPATS['478'].phases[0];
+setInterval(()=>{
+  if(!S.playing) return;
+  const bp=BPATS[S.breathKey];
+  if(_bcd<=0){_bph=(_bph+1)%4;_bcd=bp.phases[_bph];if(_bph===0){S.bCycles++;document.getElementById('bcyc').textContent=S.bCycles;const coh=(74+Math.random()*21).toFixed(0)+'%';document.getElementById('bcoh').textContent=coh;const rpco=document.getElementById('rpco');if(rpco) rpco.textContent=coh;}}
+  const pn=bp.labels[_bph]||'—';const core=document.getElementById('bcore');const ph=document.getElementById('bcp');const ct=document.getElementById('bcc');const br1=document.getElementById('br1');const br2=document.getElementById('br2');
+  if(ph) ph.textContent=pn;if(ct) ct.textContent=_bcd>0?_bcd+'s':'—';
+  if(core){const isIn=pn==='INHALE',isEx=pn==='EXHALE';core.style.background=isIn?'radial-gradient(circle,rgba(72,200,222,0.28),rgba(72,200,222,0.04))':isEx?'radial-gradient(circle,rgba(88,206,152,0.22),rgba(88,206,152,0.04))':'radial-gradient(circle,rgba(201,168,76,0.14),rgba(201,168,76,0.03))';}
+  const sc=_bph===0?'scale(1.3)':_bph===2?'scale(0.78)':'scale(1)';
+  if(br1) br1.style.transform=sc;if(br2) br2.style.transform=sc;
+  _bcd--;
+},1000);
+
+/* ═══════════════════════════
+   TOAST
+═══════════════════════════ */
+let _tt=null;
+function toast(msg,type=''){
+  const el=document.getElementById('toast');if(!el) return;
+  el.textContent=msg;el.className='toast show'+(type?' t'+type:'');
+  clearTimeout(_tt);_tt=setTimeout(()=>el.classList.remove('show'),2500);
+}
+
+/* ═══════════════════════════
+   KEYBOARD
+═══════════════════════════ */
+document.addEventListener('keydown',e=>{
+  const tag=document.activeElement?.tagName;
+  if(tag==='TEXTAREA'||tag==='INPUT') return;
+  const TABS=['freq','tones','breath','claude','lso','oracle','journal'];
+  if(e.code==='Space'){e.preventDefault();togglePlay();}
+  if(e.key>='1'&&e.key<='7'){const t=TABS[parseInt(e.key)-1];const b=document.querySelector(`[data-tab="${t}"]`);if(b) switchTab(t,b);}
+  if(e.code==='ArrowRight') selectFreq((S.freqIdx+1)%FREQUENCIES.length);
+  if(e.code==='ArrowLeft') selectFreq((S.freqIdx-1+FREQUENCIES.length)%FREQUENCIES.length);
+  if(e.code==='KeyT'){const b=document.querySelector('.t-tone');if(b) switchTab('tones',b);}
+  if(e.code==='KeyO'){const b=document.querySelector('.t-oracle');if(b) switchTab('oracle',b);}
+  if(e.code==='KeyM'){const modes=['healing','meditation','sleep','focus'];const next=modes[(modes.indexOf(S.mode)+1)%modes.length];const btn=[...document.querySelectorAll('#mgrid .btn-sm')].find(b=>b.textContent.toLowerCase()===next);if(btn) setMode(btn,next);}
+});
+
+document.getElementById('cta')?.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendC();}});
+function seekBar(e){const bar=document.getElementById('sbar');S.sessionSec=Math.round((e.offsetX/bar.offsetWidth)*3600);document.getElementById('hdr-clock').textContent=fmtTime(S.sessionSec);}
+
+/* ═══════════════════════════
+   UTILITIES
+═══════════════════════════ */
+function fmtTime(s){const h=Math.floor(s/3600),m=Math.floor((s%3600)/60),ss=s%60;return`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(ss).padStart(2,'0')}`;}
+function fmtMins(m){if(m===0)return'0m';return m>=60?`${Math.floor(m/60)}h ${m%60}m`:`${m}m`;}
+function cap(s){return s.charAt(0).toUpperCase()+s.slice(1);}
+function getFav(){if(!S.fhist.length)return'—';const c={};S.fhist.forEach(n=>{c[n]=(c[n]||0)+1;});return Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0];}
+function escH(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+/* ═══════════════════════════
+   BOOT
+═══════════════════════════ */
+(function boot(){
+  buildFreqLib();buildChakras();buildBwaves();buildProtos();
+  buildLSO();buildStages();buildConsMeter();buildEntrain();buildRpt();buildBreathGuide();
+  buildTonesPage();
+  updateCtx();updateStats();renderEntries();drawOptScore(0);
+
+  document.getElementById('ftsess').textContent=S.totalSess;
+  document.getElementById('fttime').textContent=fmtMins(S.totalMins);
+  document.getElementById('ftfreq').textContent=FREQUENCIES[S.freqIdx]?.name||'—';
+
+  setTimeout(()=>{
+    addCMsg('assistant',
+      `Welcome to SOMA ∞ Ultimate — with fully integrated Healing Tones.\n\nI\'m synchronized with your session: ${FREQUENCIES[S.freqIdx]?.name} at ${FREQUENCIES[S.freqIdx]?.hz} Hz in ${S.mode} mode.\n\nNew this session — visit the **♪ Healing Tones** tab to play any of the 12 sacred frequencies individually, each with layered harmonic synthesis, built-in reverb, and full explanations covering the science, tradition, benefits, and meditation techniques for every tone.\n\nThe **👁 Oracle** tab lets me search the live web for trending consciousness data and generate your personalized optimization protocol.\n\nWhat would you like to explore?`);
+  },900);
+
+  selectFreq(S.freqIdx);
+
+  setTimeout(()=>{
+    const l=document.getElementById('loader');l?.classList.add('fade');
+    setTimeout(()=>l?.remove(),700);
+  },1600);
+
+  toast('✦ SOMA ∞ Ultimate initialized · Healing Tones ready');
+})();
+</script>
+<div id="upgrade-modal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(2,2,8,.92);backdrop-filter:blur(10px);align-items:center;justify-content:center;">
+  <div style="background:#0c1428;border:1px solid rgba(201,168,76,.25);border-radius:18px;padding:36px;max-width:560px;width:90%;position:relative;">
+    <button onclick="closeUpgrade()" style="position:absolute;top:12px;right:16px;background:none;border:none;color:#8a8a99;font-size:1.3rem;cursor:pointer;">✕</button>
+    <h2 style="color:#f0cc60;font-size:1.3rem;margin-bottom:6px;">Upgrade SOMA</h2>
+    <p style="color:#b8b8c8;font-size:.9rem;margin-bottom:22px;">Unlock the full frequency library, oracle, and journal history.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div style="border:1px solid rgba(201,168,76,.2);border-radius:12px;padding:20px;text-align:center;">
+        <div style="color:#c9a84c;font-size:.65rem;letter-spacing:.15em;margin-bottom:8px;">ADEPT</div>
+        <div style="color:#f0cc60;font-size:1.8rem;">$12<span style="font-size:.8rem;color:#8a8a99;">/mo</span></div>
+        <p style="color:#8a8a99;font-size:.78rem;margin:10px 0 16px;">All frequencies &amp; tones, unlimited journal</p>
+        <button onclick="window.open('https://buy.stripe.com/3cI9ATaIz1sF5pUcLr2VG07','_blank')" style="width:100%;padding:10px;border-radius:40px;border:1px solid #c9a84c;background:transparent;color:#c9a84c;cursor:pointer;font-size:.75rem;">Subscribe</button>
+      </div>
+      <div style="border:1px solid rgba(201,168,76,.4);border-radius:12px;padding:20px;text-align:center;background:rgba(201,168,76,.06);">
+        <div style="color:#c9a84c;font-size:.65rem;letter-spacing:.15em;margin-bottom:8px;">CLAUDE EDITION</div>
+        <div style="color:#f0cc60;font-size:1.8rem;">$24<span style="font-size:.8rem;color:#8a8a99;">/mo</span></div>
+        <p style="color:#8a8a99;font-size:.78rem;margin:10px 0 16px;">Everything in Adept + Claude AI guide</p>
+        <button onclick="window.open('https://buy.stripe.com/fZu5kD7wndbn2dI5iZ2VG08','_blank')" style="width:100%;padding:10px;border-radius:40px;border:none;background:linear-gradient(135deg,#c9a84c,#7a5520);color:#010206;cursor:pointer;font-size:.75rem;">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function openUpgrade(){document.getElementById('upgrade-modal').style.display='flex';}
+function closeUpgrade(){document.getElementById('upgrade-modal').style.display='none';}
+document.getElementById('upgrade-modal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeUpgrade();});
+</script>
+</body>
+</html>

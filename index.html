@@ -1,0 +1,4 @@
+<!DOCTYPE html><html><body>Loading…
+<script>
+Promise.all(["spart1.txt", "spart2.txt"].map(u=>fetch(u).then(r=>r.text()))).then(parts=>{document.open();document.write(parts.join(''));document.close();});
+</script></body></html>
